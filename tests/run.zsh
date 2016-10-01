@@ -31,9 +31,9 @@ function initialize_tests() {
 # the function output.
 ###########################################
 
-
 function test_status() {
   local test_file=$1
+  
   # We pass this to our git stub so it knows what fake fixture to use
   export ZSH_FIXTURE_FILENAME=$test_file
 

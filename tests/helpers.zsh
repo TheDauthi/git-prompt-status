@@ -34,6 +34,7 @@ function _create_unnamed_tempfile() {
   rm ${__internal_tempfile}
   # Since we now have a named unbuffered file, let's use it.
   __internal_tempfile="/dev/fd/${__descriptor}"
+  # Return it through the requested result
   eval $__resultvar="'${__internal_tempfile}'"
 }
 
