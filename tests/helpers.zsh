@@ -1,10 +1,7 @@
 #!/bin/zsh
-# And because I always forget what the debug version is:
 # Tests generated with 
 # find -maxdepth 1 -type d -print0 |xargs --null -i zsh -c " cd {}; git status --porcelain -b > /home/billyconn/Projects/zsh-git-cmd/tests/fixtures/{}.test"
-# Just renaming these to ensure that we get consistent output
 
-# This lets us use our git shim
 autoload -U colors; colors
 emulate -L zsh
 
