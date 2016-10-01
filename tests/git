@@ -1,0 +1,12 @@
+#!/bin/zsh
+# Test stub for git-status
+command=$1
+
+test=${ZSH_FIXTURE_FILENAME}
+
+if [[ "$command" == 'status' ]]; then
+  cat "$ZSH_FIXTURE_FILENAME"
+  return 0
+else
+  return 1
+fi
