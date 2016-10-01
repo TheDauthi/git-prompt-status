@@ -86,7 +86,7 @@ function git_prompt_status_new() {
   if _match_status_prefix 'div'; then
     STATUS="$ZSH_TEST_GIT_PROMPT_DIVERGED$STATUS"
   fi
-  echo "$STATUS"
+  echo $STATUS
 }
 
 # Get the status of the working tree
