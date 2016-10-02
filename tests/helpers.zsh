@@ -38,6 +38,16 @@ function _create_unnamed_tempfile() {
   eval $__resultvar="'${__internal_tempfile}'"
 }
 
+# Used for systems where writing to a removed fd is
+# not something I want to try to debug tonight
+function _create_named_tempfile() {
+  local __resultvar=$1
+  local __internal_tempfile=$(mktemp)
+  # Return it through the requested result
+  eval $__resultvar="'${__internal_tempfile}'"
+  eval "zshexit() { rm \$$__resultvar }"
+}
+
 function test_function() {
   # First let's clean the buffer
   printf '' > $TEMPFILE

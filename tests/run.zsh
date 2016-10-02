@@ -8,7 +8,7 @@ test_function="git_prompt_status"
 
 # I can't use command substitution for once.
 # So here's a result variable.
-_create_unnamed_tempfile 'TEMPFILE'
+_create_named_tempfile 'TEMPFILE'
 
 # I should trap and clean this...
 # exec {tempdesc}>&-
