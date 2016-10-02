@@ -66,7 +66,6 @@ function compare_test_times() {
   new_time=$2
   
   local measure percent
-
   if (( $new_time == $old_time )); then
     measure="unchanged, new: $new_time, old: $old_time"
   elif (( $new_time < .0001 )); then
