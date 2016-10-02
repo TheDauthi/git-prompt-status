@@ -1,28 +1,36 @@
 function git_prompt_status() {
-  local status_prompt prefix_lines prefixes
+  local status_text status_lines tracking_line status_prompt
+
+  status_text=$(command git status --porcelain -b 2> /dev/null)
+
+  status_lines=("${(@f)${status_text}}");
+
   local -A prefix_lookup
-  
-  # Documenting the ugly sed line below for future maintainers
-  # - Break if it doesn't match the behind/diverged/ahead line
-  # - Remove everything not in the brackets, leaving a CSV of statuses
-  # - Remove spaces
-  # - Split statuses into separate lines
 
-  local prefix_lines=$({command git status --porcelain -b \
-    | sed -Ee  '/^## [^ ]+ .*(behind|diverged|ahead)/!b
-                s/.*\[(.*)\].*/\1/g
-                s/[ ]//g
-                y/,/\n/' \
-    | cut -c-3 \
-    | sort -u } 2>/dev/null)
+  # "^## [^ ]+ \[(((behind|diverged|ahead) [[:digit:]]+[, ]*)+)\]"
+  # does this more easily, but this is easier to read
 
-  local prefixes=("${(@f)${prefix_lines}}");
+  # If the tracking line exists, grab it.
+  if [[ $status_lines[1] =~ "^## [^ ]+ \[.*\]" ]]; then
+    tracking_line=$status_lines[1]
+    # Pull out the branch statuses
+    if [[ $tracking_line =~ ".*\[(.*)\].*" ]]; then
+      # If there are multiple, split them on the comma
+      local branch_statuses=("${(@s/,/)match}")
+      for branch_status in ${branch_statuses}; do
+        # There are a few other states that we're not looking for...
+        if [[ $branch_status =~ "(behind|diverged|ahead)" ]]; then
+          prefix_lookup[$match[1]]=0
+        fi
+      done
+    fi
+    shift status_lines
+  fi
 
-  # Generate a hash table of all of the index items
-  for prefix in ${prefixes}; do
-    prefix_lookup[$prefix]=0
+  for line in ${status_lines}; do
+    prefix_lookup[${line[1,3]}]=0
   done
-  
+
   local _match_status_prefix() {
     return $(( ${+prefix_lookup[$1]} == 0 ))
   }
@@ -61,13 +69,13 @@ function git_prompt_status() {
   if _match_status_prefix 'UU '; then
     status_prompt="$ZSH_THEME_GIT_PROMPT_UNMERGED$status_prompt"
   fi;
-  if _match_status_prefix 'ahe' ; then
+  if _match_status_prefix 'ahead' ; then
     status_prompt="$ZSH_THEME_GIT_PROMPT_AHEAD$status_prompt"
   fi
-  if _match_status_prefix 'beh' ; then
+  if _match_status_prefix 'behind' ; then
     status_prompt="$ZSH_THEME_GIT_PROMPT_BEHIND$status_prompt"
   fi
-  if _match_status_prefix 'div'; then
+  if _match_status_prefix 'diverged'; then
     status_prompt="$ZSH_THEME_GIT_PROMPT_DIVERGED$status_prompt"
   fi
   echo $status_prompt
