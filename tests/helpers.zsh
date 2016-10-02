@@ -25,6 +25,14 @@ function _load_external_function() {
   return 0
 }
 
+# This functionality is a stub for later changes
+function _add_shim() {
+  local shim=$1
+  local absolute_shim=$(readlink -f $shim)
+  local absolute_path=$(dirname $absolute_shim)
+  PATH="$absolute_path:$PATH"
+}
+
 function _create_unnamed_tempfile() {
   local __resultvar=$1
   local __internal_tempfile=$(mktemp)
@@ -62,22 +70,27 @@ function test_function() {
 }
 
 function compare_test_times() {
-  old_time=$1
-  new_time=$2
+  local old_time=$1
+  local new_time=$2
+
+  local measure percent timing
   
-  local measure percent
-  if (( $new_time == $old_time )); then
-    measure="unchanged, new: $new_time, old: $old_time"
-  elif (( $new_time < .0001 )); then
-    measure="?? faster, new: $new_time, old: $old_time"
-  elif (( $new_time > $old_time )); then
-    percent=(( $old_time * 100 / $new_time))
-    measure=$(printf "%0.2f%% slower, new: $new_time, old: $old_time" $percent)
-  elif (( $new_time < $old_time )); then
-    percent=$(( $old_time * 100 / $new_time))
-    measure=$(printf "%0.2f%% faster, new: $new_time, old: $old_time" $percent)
+  timing=$(printf 'new: %s, old: %s' $new_time $old_time)
+  echo $old_time
+
+  if (( new_time == old_time )); then
+    measure=$(printf 'unchanged, %s' $timing)
+  elif (( new_time < .00000001 )); then
+    measure=$(printf '?? faster, %s' $timing)
   else
-    measure="__ERROR__"
+    (( percent = (old_time * 100 / new_time) - 100 ))
+    if (( new_time > old_time )); then
+      measure=$(printf '%0.2f%% slower, %s' $percent $timing)
+    elif (( new_time < old_time )); then
+      measure=$(printf '%0.2f%% faster, %s' $percent $timing)
+    else
+      measure="__ERROR__"
+    fi
   fi
   echo $measure
 }
