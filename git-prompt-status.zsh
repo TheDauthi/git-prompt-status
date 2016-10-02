@@ -3,9 +3,9 @@ function git_prompt_status() {
   typeset -A prefix_lookup
 
   local status_text=$({command git status --porcelain -b \
-    | sed -Ee  '/^## [^ ]+ .*(behind|diverged|ahead)/!b;
-                s/.*\[(.*)\].*/\1/g; 
-                s/[ ]//g;
+    | sed -Ee  '/^## [^ ]+ .*(behind|diverged|ahead)/!b
+                s/.*\[(.*)\].*/\1/g
+                s/[ ]//g
                 y/,/\n/' \
     | cut -c-3 \
     | sort -u } 2>/dev/null)
