@@ -1,0 +1,1685 @@
+## rewards-rubocop...origin/rewards-rubocop [ahead 11, behind 74]
+ M CREDITS
+ M Documentation/DocBook/kernel-hacking.tmpl
+ D Documentation/DocBook/kernel-locking.tmpl
+ M Documentation/ManagementStyle
+ M Documentation/devices.txt
+ D Documentation/prctl/disable-tsc-ctxt-sw-stress-test.c
+ D Documentation/prctl/disable-tsc-on-off-stress-test.c
+ D Documentation/prctl/disable-tsc-test.c
+ D Documentation/s390/Debugging390.txt
+ D Documentation/scheduler/sched-arch.txt
+ D Documentation/scsi/ChangeLog.1992-1997
+ D Documentation/x86/exception-tables.txt
+ D arch/alpha/boot/bootp.c
+ D arch/alpha/boot/bootpz.c
+ D arch/alpha/boot/main.c
+ D arch/alpha/include/asm/atomic.h
+ D arch/alpha/include/asm/barrier.h
+ D arch/alpha/include/asm/bitops.h
+ D arch/alpha/include/asm/bug.h
+ D arch/alpha/include/asm/fpu.h
+ D arch/alpha/include/asm/futex.h
+ D arch/alpha/include/asm/local.h
+ D arch/alpha/include/asm/mmu_context.h
+ D arch/alpha/include/asm/pal.h
+ D arch/alpha/include/asm/processor.h
+ D arch/alpha/include/asm/rwsem.h
+ D arch/alpha/include/asm/smp.h
+ D arch/alpha/include/asm/special_insns.h
+ D arch/alpha/include/asm/spinlock.h
+ D arch/alpha/include/asm/thread_info.h
+ D arch/alpha/include/asm/timex.h
+ D arch/alpha/include/asm/uaccess.h
+ D arch/alpha/include/asm/xchg.h
+ D arch/alpha/include/uapi/asm/compiler.h
+ D arch/alpha/kernel/core_cia.c
+ D arch/alpha/kernel/core_marvel.c
+ D arch/alpha/kernel/setup.c
+ D arch/alpha/kernel/sys_jensen.c
+ D arch/alpha/kernel/sys_sx164.c
+ D arch/alpha/kernel/traps.c
+ D arch/alpha/lib/csum_partial_copy.c
+ D arch/alpha/lib/memcpy.c
+ D arch/alpha/lib/stacktrace.c
+ D arch/alpha/lib/udelay.c
+ D arch/alpha/math-emu/sfp-util.h
+ D arch/alpha/mm/init.c
+ D arch/arc/include/asm/arcregs.h
+ D arch/arc/include/asm/atomic.h
+ D arch/arc/include/asm/bitops.h
+ D arch/arc/include/asm/cache.h
+ D arch/arc/include/asm/checksum.h
+ D arch/arc/include/asm/cmpxchg.h
+ D arch/arc/include/asm/delay.h
+ D arch/arc/include/asm/futex.h
+ D arch/arc/include/asm/io.h
+ D arch/arc/include/asm/irqflags-arcv2.h
+ D arch/arc/include/asm/irqflags-compact.h
+ D arch/arc/include/asm/kgdb.h
+ D arch/arc/include/asm/processor.h
+ D arch/arc/include/asm/spinlock.h
+ D arch/arc/include/asm/uaccess.h
+ D arch/arc/include/uapi/asm/swab.h
+ D arch/arc/kernel/ctx_sw.c
+ D arch/arc/kernel/fpu.c
+ D arch/arc/kernel/kprobes.c
+ D arch/arc/kernel/process.c
+ D arch/arc/kernel/reset.c
+ D arch/arc/kernel/setup.c
+ D arch/arc/kernel/smp.c
+ D arch/arc/kernel/stacktrace.c
+ D arch/arc/kernel/time.c
+ D arch/arc/kernel/traps.c
+ D arch/arc/kernel/unaligned.c
+ D arch/arc/mm/tlb.c
+ D arch/arc/plat-eznps/smp.c
+ M arch/arm/boot/dts/am57xx-cl-som-am57x.dts
+ M arch/arm/boot/dts/am57xx-sbc-am57x.dts
+ M arch/arm/boot/dts/orion5x-kuroboxpro.dts
+ M arch/arm/boot/dts/orion5x-linkstation-lsgl.dts
+ D arch/arm/firmware/trusted_foundations.c
+ D arch/arm/include/asm/atomic.h
+ D arch/arm/include/asm/barrier.h
+ D arch/arm/include/asm/bitrev.h
+ D arch/arm/include/asm/checksum.h
+ D arch/arm/include/asm/cmpxchg.h
+ D arch/arm/include/asm/compiler.h
+ D arch/arm/include/asm/div64.h
+ D arch/arm/include/asm/edac.h
+ D arch/arm/include/asm/futex.h
+ D arch/arm/include/asm/irqflags.h
+ D arch/arm/include/asm/kexec.h
+ D arch/arm/include/asm/memory.h
+ D arch/arm/include/asm/opcodes.h
+ D arch/arm/include/asm/proc-fns.h
+ D arch/arm/include/asm/processor.h
+ D arch/arm/include/asm/spinlock.h
+ D arch/arm/include/asm/swab.h
+ D arch/arm/include/asm/tls.h
+ D arch/arm/include/asm/uaccess.h
+ D arch/arm/include/asm/unified.h
+ D arch/arm/include/asm/xor.h
+ D arch/arm/kernel/pj4-cp0.c
+ D arch/arm/kernel/process.c
+ D arch/arm/kernel/setup.c
+ D arch/arm/kernel/smp.c
+ D arch/arm/kernel/swp_emulate.c
+ D arch/arm/kernel/xscale-cp0.c
+ D arch/arm/kvm/arm.c
+ D arch/arm/kvm/hyp/banked-sr.c
+ D arch/arm/kvm/hyp/switch.c
+ D arch/arm/mach-bcm/bcm_kona_smc.c
+ D arch/arm/mach-imx/mm-imx3.c
+ D arch/arm/mach-iop13xx/pci.c
+ D arch/arm/mach-mv78xx0/common.c
+ D arch/arm/mach-omap1/pm.c
+ M arch/arm/mach-orion5x/board-rd88f5182.c
+ M arch/arm/mach-orion5x/kurobox_pro-setup.c
+ M arch/arm/mach-orion5x/rd88f5182-setup.c
+ D arch/arm/mach-prima2/hotplug.c
+ D arch/arm/mach-pxa/irq.c
+ D arch/arm/mach-pxa/mp900.c
+ D arch/arm/mach-pxa/pxa3xx.c
+ D arch/arm/mach-s3c24xx/include/mach/io.h
+ D arch/arm/mach-ux500/hotplug.c
+ D arch/arm/mm/alignment.c
+ D arch/arm/mm/cache-feroceon-l2.c
+ D arch/arm/mm/cache-tauros2.c
+ D arch/arm/mm/cache-xsc3l2.c
+ D arch/arm/mm/copypage-v6.c
+ D arch/arm/nwfpe/softfloat-macros
+ D arch/arm/nwfpe/softfloat-specialize
+ D arch/arm/nwfpe/softfloat.c
+ D arch/arm/plat-iop/pci.c
+ D arch/arm/probes/decode.c
+ D arch/arm/probes/kprobes/actions-arm.c
+ D arch/arm/probes/kprobes/actions-common.c
+ D arch/arm/probes/kprobes/actions-thumb.c
+ D arch/arm/probes/kprobes/core.c
+ D arch/arm/probes/kprobes/test-core.c
+ D arch/arm/probes/kprobes/test-core.h
+ D arch/arm64/crypto/aes-ce-cipher.c
+ D arch/arm64/crypto/crc32-arm64.c
+ D arch/arm64/include/asm/bitrev.h
+ D arch/arm64/include/asm/compiler.h
+ D arch/arm64/include/asm/lse.h
+ D arch/arm64/kernel/armv8_deprecated.c
+ D arch/avr32/include/asm/checksum.h
+ D arch/avr32/mm/init.c
+ D arch/blackfin/include/asm/barrier.h
+ D arch/blackfin/include/asm/bfrom.h
+ D arch/blackfin/include/asm/bitops.h
+ D arch/blackfin/include/asm/blackfin.h
+ D arch/blackfin/include/asm/checksum.h
+ D arch/blackfin/include/asm/cmpxchg.h
+ D arch/blackfin/include/asm/def_LPBlackfin.h
+ D arch/blackfin/include/asm/delay.h
+ D arch/blackfin/include/asm/ipipe.h
+ D arch/blackfin/include/asm/irq.h
+ D arch/blackfin/include/asm/processor.h
+ D arch/blackfin/include/asm/thread_info.h
+ D arch/blackfin/include/asm/timex.h
+ D arch/blackfin/include/asm/uaccess.h
+ D arch/blackfin/include/uapi/asm/swab.h
+ D arch/blackfin/kernel/debug-mmrs.c
+ D arch/blackfin/kernel/process.c
+ D arch/blackfin/kernel/pseudodbg.c
+ D arch/blackfin/mach-bf609/pm.c
+ D arch/blackfin/mach-common/clocks-init.c
+ D arch/blackfin/mach-common/pm.c
+ D arch/cris/arch-v10/kernel/kgdb.c
+ D arch/cris/arch-v10/lib/memset.c
+ D arch/cris/arch-v10/lib/string.c
+ D arch/cris/arch-v10/lib/usercopy.c
+ D arch/cris/arch-v32/kernel/kgdb.c
+ D arch/cris/arch-v32/kernel/process.c
+ D arch/cris/arch-v32/kernel/traps.c
+ D arch/cris/arch-v32/lib/memset.c
+ D arch/cris/arch-v32/lib/string.c
+ D arch/cris/arch-v32/lib/usercopy.c
+ D arch/cris/boot/compressed/misc.c
+ D arch/cris/include/arch-v10/arch/bitops.h
+ D arch/cris/include/arch-v10/arch/bug.h
+ D arch/cris/include/arch-v10/arch/checksum.h
+ D arch/cris/include/arch-v10/arch/delay.h
+ D arch/cris/include/arch-v10/arch/irq.h
+ D arch/cris/include/arch-v10/arch/processor.h
+ D arch/cris/include/arch-v10/arch/swab.h
+ D arch/cris/include/arch-v10/arch/system.h
+ D arch/cris/include/arch-v10/arch/thread_info.h
+ D arch/cris/include/arch-v10/arch/uaccess.h
+ D arch/cris/include/arch-v10/arch/unistd.h
+ D arch/cris/include/arch-v32/arch/bitops.h
+ D arch/cris/include/arch-v32/arch/bug.h
+ D arch/cris/include/arch-v32/arch/checksum.h
+ D arch/cris/include/arch-v32/arch/delay.h
+ D arch/cris/include/arch-v32/arch/hwregs/supp_reg.h
+ D arch/cris/include/arch-v32/arch/irq.h
+ D arch/cris/include/arch-v32/arch/processor.h
+ D arch/cris/include/arch-v32/arch/swab.h
+ D arch/cris/include/arch-v32/arch/system.h
+ D arch/cris/include/arch-v32/arch/thread_info.h
+ D arch/cris/include/arch-v32/arch/uaccess.h
+ D arch/cris/include/arch-v32/arch/unistd.h
+ D arch/cris/include/asm/uaccess.h
+ D arch/frv/include/asm/io.h
+ D arch/h8300/include/asm/bitops.h
+ D arch/h8300/include/asm/cmpxchg.h
+ D arch/h8300/include/asm/io.h
+ D arch/h8300/include/asm/irqflags.h
+ D arch/h8300/include/asm/kgdb.h
+ D arch/h8300/include/asm/switch_to.h
+ D arch/h8300/include/asm/thread_info.h
+ D arch/h8300/kernel/process.c
+ D arch/h8300/kernel/ptrace_h.c
+ D arch/h8300/kernel/sim-console.c
+ D arch/h8300/lib/delay.c
+ D arch/hexagon/include/asm/atomic.h
+ D arch/hexagon/include/asm/bitops.h
+ D arch/hexagon/include/asm/cmpxchg.h
+ D arch/hexagon/include/asm/futex.h
+ D arch/hexagon/include/asm/spinlock.h
+ D arch/hexagon/kernel/smp.c
+ D arch/hexagon/mm/cache.c
+ D arch/ia64/include/asm/futex.h
+ D arch/ia64/include/asm/spinlock.h
+ D arch/m32r/include/asm/atomic.h
+ D arch/m32r/include/asm/barrier.h
+ D arch/m32r/include/asm/bitops.h
+ D arch/m32r/include/asm/checksum.h
+ D arch/m32r/include/asm/cmpxchg.h
+ D arch/m32r/include/asm/local.h
+ D arch/m32r/include/asm/spinlock.h
+ D arch/m32r/include/asm/switch_to.h
+ D arch/m32r/include/asm/thread_info.h
+ D arch/m32r/include/asm/tlbflush.h
+ D arch/m32r/include/asm/uaccess.h
+ D arch/m32r/kernel/align.c
+ D arch/m32r/kernel/ptrace.c
+ D arch/m32r/kernel/smp.c
+ D arch/m32r/kernel/sys_m32r.c
+ D arch/m32r/lib/delay.c
+ D arch/m32r/lib/usercopy.c
+ D arch/m32r/mm/fault.c
+ D arch/m32r/platforms/m32104ut/io.c
+ D arch/m32r/platforms/m32700ut/io.c
+ D arch/m32r/platforms/mappi/io.c
+ D arch/m32r/platforms/mappi2/io.c
+ D arch/m32r/platforms/mappi3/io.c
+ D arch/m32r/platforms/oaks32r/io.c
+ D arch/m32r/platforms/opsput/io.c
+ D arch/m32r/platforms/usrv/io.c
+ D arch/m68k/68000/m68VZ328.c
+ D arch/m68k/coldfire/cache.c
+ D arch/m68k/coldfire/pci.c
+ D arch/m68k/include/asm/atarihw.h
+ D arch/m68k/include/asm/atariints.h
+ D arch/m68k/include/asm/atomic.h
+ D arch/m68k/include/asm/bitops.h
+ D arch/m68k/include/asm/bootstd.h
+ D arch/m68k/include/asm/cacheflush_mm.h
+ D arch/m68k/include/asm/cacheflush_no.h
+ D arch/m68k/include/asm/checksum.h
+ D arch/m68k/include/asm/cmpxchg.h
+ D arch/m68k/include/asm/current.h
+ D arch/m68k/include/asm/delay.h
+ D arch/m68k/include/asm/linkage.h
+ D arch/m68k/include/asm/mcfmmu.h
+ D arch/m68k/include/asm/mmu_context.h
+ D arch/m68k/include/asm/movs.h
+ D arch/m68k/include/asm/page_mm.h
+ D arch/m68k/include/asm/processor.h
+ D arch/m68k/include/asm/raw_io.h
+ D arch/m68k/include/asm/segment.h
+ D arch/m68k/include/asm/sun3ints.h
+ D arch/m68k/include/asm/switch_to.h
+ D arch/m68k/include/asm/thread_info.h
+ D arch/m68k/include/asm/tlbflush.h
+ D arch/m68k/include/asm/uaccess_no.h
+ D arch/m68k/include/uapi/asm/swab.h
+ D arch/m68k/kernel/process.c
+ D arch/m68k/kernel/signal.c
+ D arch/m68k/kernel/sys_m68k.c
+ D arch/m68k/kernel/traps.c
+ D arch/m68k/kernel/vectors.c
+ D arch/m68k/lib/checksum.c
+ D arch/m68k/lib/muldi3.c
+ D arch/m68k/mac/misc.c
+ D arch/m68k/mm/hwtest.c
+ D arch/m68k/mm/sun3kmap.c
+ D arch/m68k/sun3/prom/console.c
+ D arch/metag/include/asm/tbx.h
+ D arch/metag/lib/usercopy.c
+ D arch/microblaze/include/asm/checksum.h
+ D arch/microblaze/include/asm/delay.h
+ D arch/microblaze/include/asm/exceptions.h
+ D arch/microblaze/include/asm/futex.h
+ D arch/microblaze/include/asm/kgdb.h
+ D arch/microblaze/include/asm/pgtable.h
+ D arch/microblaze/include/asm/uaccess.h
+ D arch/microblaze/kernel/cpu/cache.c
+ D arch/microblaze/kernel/cpu/pvr.c
+ D arch/microblaze/kernel/ftrace.c
+ D arch/microblaze/kernel/kgdb.c
+ D arch/microblaze/kernel/unwind.c
+ D arch/microblaze/mm/init.c
+ D arch/mips/alchemy/board-mtx1.c
+ D arch/mips/alchemy/board-xxs1500.c
+ D arch/mips/bcm47xx/setup.c
+ D arch/mips/bcm63xx/setup.c
+ D arch/mips/cavium-octeon/crypto/octeon-crypto.h
+ D arch/mips/dec/kn01-berr.c
+ D arch/mips/fw/sni/sniprom.c
+ D arch/mips/include/asm/atomic.h
+ D arch/mips/include/asm/barrier.h
+ D arch/mips/include/asm/bitops.h
+ D arch/mips/include/asm/bug.h
+ D arch/mips/include/asm/checksum.h
+ D arch/mips/include/asm/cmpxchg.h
+ D arch/mips/include/asm/dec/prom.h
+ D arch/mips/include/asm/div64.h
+ D arch/mips/include/asm/edac.h
+ D arch/mips/include/asm/futex.h
+ D arch/mips/include/asm/hazards.h
+ D arch/mips/include/asm/io.h
+ D arch/mips/include/asm/irqflags.h
+ D arch/mips/include/asm/jazz.h
+ D arch/mips/include/asm/kvm_host.h
+ D arch/mips/include/asm/kvm_para.h
+ D arch/mips/include/asm/local.h
+ D arch/mips/include/asm/mach-loongson64/loongson.h
+ D arch/mips/include/asm/mach-pmcs-msp71xx/msp_regops.h
+ D arch/mips/include/asm/mach-rc32434/rc32434.h
+ D arch/mips/include/asm/mips-boards/sim.h
+ D arch/mips/include/asm/mipsmtregs.h
+ M arch/mips/include/asm/mipsprom.h
+ D arch/mips/include/asm/mipsregs.h
+ D arch/mips/include/asm/msa.h
+ D arch/mips/include/asm/netlogic/haldefs.h
+ D arch/mips/include/asm/netlogic/mips-extns.h
+ D arch/mips/include/asm/netlogic/xlr/fmn.h
+ D arch/mips/include/asm/octeon/cvmx-spinlock.h
+ D arch/mips/include/asm/paccess.h
+ D arch/mips/include/asm/pgtable.h
+ D arch/mips/include/asm/processor.h
+ D arch/mips/include/asm/r4kcache.h
+ D arch/mips/include/asm/sgiarcs.h
+ D arch/mips/include/asm/sibyte/sb1250.h
+ D arch/mips/include/asm/sim.h
+ D arch/mips/include/asm/spinlock.h
+ D arch/mips/include/asm/stacktrace.h
+ D arch/mips/include/asm/string.h
+ D arch/mips/include/asm/thread_info.h
+ D arch/mips/include/asm/uaccess.h
+ D arch/mips/include/uapi/asm/swab.h
+ D arch/mips/jz4740/pm.c
+ D arch/mips/jz4740/reset.c
+ D arch/mips/kernel/csrc-r4k.c
+ M arch/mips/kernel/genex.S
+ D arch/mips/kernel/idle.c
+ D arch/mips/kernel/irq.c
+ D arch/mips/kernel/kgdb.c
+ D arch/mips/kernel/mips-mt.c
+ D arch/mips/kernel/mips-r2-to-r6-emul.c
+ D arch/mips/kernel/relocate.c
+ D arch/mips/kernel/signal.c
+ D arch/mips/kernel/signal_n32.c
+ D arch/mips/kernel/signal_o32.c
+ D arch/mips/kernel/smp-bmips.c
+ D arch/mips/kernel/syscall.c
+ D arch/mips/kernel/traps.c
+ D arch/mips/kernel/unaligned.c
+ D arch/mips/lantiq/clk.c
+ D arch/mips/lib/delay.c
+ D arch/mips/lib/mips-atomic.c
+ D arch/mips/lib/r3k_dump_tlb.c
+ D arch/mips/lib/uncached.c
+ D arch/mips/loongson64/common/reset.c
+ D arch/mips/loongson64/loongson-3/smp.c
+ D arch/mips/mm/c-r4k.c
+ D arch/mips/mm/c-tx39.c
+ D arch/mips/mm/cerr-sb1.c
+ D arch/mips/mm/sc-ip22.c
+ D arch/mips/mm/sc-rm7k.c
+ D arch/mips/mm/tlb-r3k.c
+ D arch/mips/mm/tlb-r8k.c
+ D arch/mips/pci/ops-bridge.c
+ D arch/mips/pic32/common/reset.c
+ D arch/mips/pmcs-msp71xx/msp_setup.c
+ D arch/mips/pnx833x/common/reset.c
+ D arch/mips/sgi-ip22/ip22-nvram.c
+ D arch/mips/sgi-ip22/ip22-setup.c
+ D arch/mips/sibyte/common/sb_tbprof.c
+ D arch/mips/vdso/gettimeofday.c
+ D arch/mips/vdso/vdso.h
+ D arch/mips/vr41xx/common/pmu.c
+ M arch/mn10300/boot/Makefile
+ M arch/mn10300/boot/compressed/misc.c
+ M arch/mn10300/include/asm/dma.h
+ M arch/mn10300/include/asm/elf.h
+ M arch/mn10300/include/asm/hardirq.h
+ M arch/mn10300/include/asm/irq.h
+ M arch/mn10300/include/asm/processor.h
+ M arch/mn10300/include/asm/rtc.h
+ M arch/mn10300/include/asm/rwlock.h
+ M arch/mn10300/include/asm/signal.h
+ M arch/mn10300/include/asm/smp.h
+ M arch/mn10300/include/asm/string.h
+ M arch/mn10300/include/asm/types.h
+ M arch/mn10300/include/asm/ucontext.h
+ M arch/mn10300/include/asm/user.h
+ M arch/mn10300/include/uapi/asm/param.h
+ M arch/mn10300/include/uapi/asm/posix_types.h
+ M arch/mn10300/include/uapi/asm/signal.h
+ M arch/mn10300/include/uapi/asm/types.h
+ M arch/mn10300/kernel/entry.S
+ M arch/mn10300/kernel/mn10300_ksyms.c
+ M arch/mn10300/kernel/ptrace.c
+ M arch/mn10300/kernel/sigframe.h
+ M arch/mn10300/kernel/smp-low.S
+ M arch/mn10300/kernel/sys_mn10300.c
+ M arch/mn10300/kernel/traps.c
+ M arch/mn10300/lib/checksum.c
+ M arch/mn10300/lib/usercopy.c
+ M arch/mn10300/mm/extable.c
+ M arch/mn10300/mm/fault.c
+ M arch/mn10300/mm/init.c
+ M arch/mn10300/mm/misalignment.c
+ M arch/mn10300/mm/pgtable.c
+ M arch/mn10300/mm/tlb-mn10300.S
+ M arch/mn10300/proc-mn2ws0050/include/proc/cache.h
+ M arch/mn10300/proc-mn2ws0050/include/proc/clock.h
+ M arch/mn10300/proc-mn2ws0050/include/proc/irq.h
+ M arch/mn10300/proc-mn2ws0050/include/proc/smp-regs.h
+ M arch/mn10300/unit-asb2364/include/unit/clock.h
+ M arch/mn10300/unit-asb2364/include/unit/smsc911x.h
+ M arch/mn10300/unit-asb2364/smsc911x.c
+ D arch/nios2/include/asm/checksum.h
+ D arch/nios2/include/asm/kgdb.h
+ D arch/nios2/include/asm/switch_to.h
+ D arch/nios2/include/asm/uaccess.h
+ D arch/nios2/kernel/process.c
+ D arch/nios2/kernel/setup.c
+ D arch/nios2/lib/memset.c
+ D arch/nios2/mm/cacheflush.c
+ D arch/openrisc/include/asm/bitops/__ffs.h
+ D arch/openrisc/include/asm/bitops/__fls.h
+ D arch/openrisc/include/asm/bitops/ffs.h
+ D arch/openrisc/include/asm/bitops/fls.h
+ D arch/openrisc/include/asm/spr.h
+ D arch/openrisc/include/asm/uaccess.h
+ D arch/openrisc/kernel/process.c
+ D arch/openrisc/kernel/traps.c
+ D arch/openrisc/mm/fault.c
+ D arch/parisc/include/asm/bitops.h
+ D arch/parisc/include/asm/checksum.h
+ D arch/parisc/include/asm/io.h
+ D arch/parisc/include/asm/ldcw.h
+ D arch/parisc/include/asm/prefetch.h
+ D arch/parisc/include/asm/processor.h
+ D arch/parisc/include/asm/special_insns.h
+ D arch/parisc/include/asm/uaccess.h
+ D arch/parisc/include/asm/unistd.h
+ D arch/parisc/include/uapi/asm/swab.h
+ D arch/parisc/kernel/unaligned.c
+ D arch/parisc/kernel/unwind.c
+ D arch/parisc/lib/checksum.c
+ D arch/parisc/lib/memcpy.c
+ D arch/powerpc/boot/io.h
+ D arch/powerpc/include/asm/atomic.h
+ D arch/powerpc/include/asm/barrier.h
+ D arch/powerpc/include/asm/bitops.h
+ D arch/powerpc/include/asm/book3s/32/pgtable.h
+ D arch/powerpc/include/asm/book3s/64/hash.h
+ D arch/powerpc/include/asm/bug.h
+ D arch/powerpc/include/asm/cache.h
+ D arch/powerpc/include/asm/checksum.h
+ D arch/powerpc/include/asm/cmpxchg.h
+ D arch/powerpc/include/asm/current.h
+ D arch/powerpc/include/asm/dbell.h
+ D arch/powerpc/include/asm/edac.h
+ D arch/powerpc/include/asm/epapr_hcalls.h
+ D arch/powerpc/include/asm/fsl_hcalls.h
+ D arch/powerpc/include/asm/futex.h
+ D arch/powerpc/include/asm/icswx.h
+ D arch/powerpc/include/asm/io.h
+ D arch/powerpc/include/asm/local.h
+ D arch/powerpc/include/asm/mutex.h
+ D arch/powerpc/include/asm/nohash/32/pgtable.h
+ D arch/powerpc/include/asm/nohash/64/pgtable.h
+ D arch/powerpc/include/asm/nohash/pgtable.h
+ D arch/powerpc/include/asm/processor.h
+ D arch/powerpc/include/asm/sfp-machine.h
+ D arch/powerpc/include/asm/spinlock.h
+ D arch/powerpc/include/asm/synch.h
+ D arch/powerpc/include/asm/timex.h
+ D arch/powerpc/include/asm/uaccess.h
+ D arch/powerpc/kernel/btext.c
+ M arch/powerpc/kernel/eeh_driver.c
+ D arch/powerpc/kernel/io.c
+ D arch/powerpc/kernel/irq.c
+ D arch/powerpc/kernel/prom_init.c
+ D arch/powerpc/kvm/book3s_hv.c
+ D arch/powerpc/kvm/book3s_hv_builtin.c
+ D arch/powerpc/lib/sstep.c
+ D arch/powerpc/mm/44x_mmu.c
+ D arch/powerpc/mm/hash_native_64.c
+ D arch/powerpc/mm/pgtable-hash64.c
+ D arch/powerpc/platforms/amigaone/setup.c
+ D arch/powerpc/platforms/embedded6xx/holly.c
+ D arch/powerpc/platforms/powermac/bootx_init.c
+ D arch/powerpc/sysdev/fsl_rio.c
+ D arch/powerpc/sysdev/tsi108_pci.c
+ D arch/score/include/asm/checksum.h
+ D arch/score/include/asm/delay.h
+ D arch/score/include/asm/thread_info.h
+ D arch/score/include/asm/tlbflush.h
+ D arch/score/include/asm/uaccess.h
+ D arch/score/kernel/irq.c
+ D arch/score/kernel/signal.c
+ D arch/score/mm/cache.c
+ D arch/sh/include/asm/atomic-grb.h
+ D arch/sh/include/asm/atomic-llsc.h
+ D arch/sh/include/asm/barrier.h
+ D arch/sh/include/asm/bitops-cas.h
+ D arch/sh/include/asm/bitops-grb.h
+ D arch/sh/include/asm/bitops-llsc.h
+ D arch/sh/include/asm/bitops-op32.h
+ D arch/sh/include/asm/bitops.h
+ D arch/sh/include/asm/bl_bit_32.h
+ D arch/sh/include/asm/bl_bit_64.h
+ D arch/sh/include/asm/bug.h
+ D arch/sh/include/asm/cache_insns_32.h
+ D arch/sh/include/asm/cache_insns_64.h
+ D arch/sh/include/asm/checksum_32.h
+ D arch/sh/include/asm/cmpxchg-cas.h
+ D arch/sh/include/asm/cmpxchg-grb.h
+ D arch/sh/include/asm/cmpxchg-llsc.h
+ D arch/sh/include/asm/dwarf.h
+ D arch/sh/include/asm/futex-cas.h
+ D arch/sh/include/asm/futex-llsc.h
+ D arch/sh/include/asm/kexec.h
+ D arch/sh/include/asm/kgdb.h
+ D arch/sh/include/asm/mmu_context_32.h
+ D arch/sh/include/asm/mutex-llsc.h
+ D arch/sh/include/asm/processor.h
+ D arch/sh/include/asm/processor_32.h
+ D arch/sh/include/asm/processor_64.h
+ D arch/sh/include/asm/spinlock-cas.h
+ D arch/sh/include/asm/spinlock-llsc.h
+ D arch/sh/include/asm/string_32.h
+ D arch/sh/include/asm/switch_to_32.h
+ D arch/sh/include/asm/thread_info.h
+ D arch/sh/include/asm/tlb_64.h
+ D arch/sh/include/asm/traps_32.h
+ D arch/sh/include/asm/traps_64.h
+ D arch/sh/include/asm/uaccess_32.h
+ D arch/sh/include/asm/unaligned-sh4a.h
+ D arch/sh/include/asm/uncached.h
+ D arch/sh/include/uapi/asm/swab.h
+ D arch/sh/kernel/cpu/init.c
+ D arch/sh/kernel/cpu/irq/intc-sh5.c
+ D arch/sh/kernel/cpu/sh5/unwind.c
+ D arch/sh/kernel/ftrace.c
+ D arch/sh/kernel/io.c
+ D arch/sh/kernel/irq.c
+ D arch/sh/kernel/irq_32.c
+ D arch/sh/kernel/irq_64.c
+ D arch/sh/kernel/kgdb.c
+ D arch/sh/kernel/sh_bios.c
+ D arch/sh/lib/delay.c
+ D arch/sh/lib/io.c
+ D arch/sh/lib64/udelay.c
+ D arch/sh/math-emu/sfp-util.h
+ D arch/sh/mm/cache-sh5.c
+ D arch/sparc/crypto/aes_glue.c
+ D arch/sparc/crypto/camellia_glue.c
+ D arch/sparc/crypto/crc32c_glue.c
+ D arch/sparc/crypto/des_glue.c
+ D arch/sparc/crypto/md5_glue.c
+ D arch/sparc/crypto/sha1_glue.c
+ D arch/sparc/crypto/sha256_glue.c
+ D arch/sparc/crypto/sha512_glue.c
+ D arch/sparc/include/asm/barrier_64.h
+ D arch/sparc/include/asm/cacheflush.h
+ D arch/sparc/include/asm/cacheflush_64.h
+ D arch/sparc/include/asm/checksum_32.h
+ D arch/sparc/include/asm/checksum_64.h
+ D arch/sparc/include/asm/cmpxchg_64.h
+ D arch/sparc/include/asm/delay_32.h
+ D arch/sparc/include/asm/fpumacro.h
+ D arch/sparc/include/asm/futex_64.h
+ D arch/sparc/include/asm/io_64.h
+ D arch/sparc/include/asm/irq_64.h
+ D arch/sparc/include/asm/irqflags_64.h
+ D arch/sparc/include/asm/kdebug_32.h
+ D arch/sparc/include/asm/leon.h
+ D arch/sparc/include/asm/mbus.h
+ D arch/sparc/include/asm/mmu_context_64.h
+ D arch/sparc/include/asm/msi.h
+ D arch/sparc/include/asm/mxcc.h
+ D arch/sparc/include/asm/obio.h
+ D arch/sparc/include/asm/perf_event.h
+ D arch/sparc/include/asm/pgtable_32.h
+ D arch/sparc/include/asm/pgtable_64.h
+ D arch/sparc/include/asm/pgtsrmmu.h
+ D arch/sparc/include/asm/processor_32.h
+ D arch/sparc/include/asm/processor_64.h
+ D arch/sparc/include/asm/psr.h
+ D arch/sparc/include/asm/ross.h
+ D arch/sparc/include/asm/sbi.h
+ D arch/sparc/include/asm/sfp-machine_32.h
+ D arch/sparc/include/asm/spinlock_32.h
+ D arch/sparc/include/asm/spinlock_64.h
+ D arch/sparc/include/asm/spitfire.h
+ D arch/sparc/include/asm/swift.h
+ D arch/sparc/include/asm/switch_to_32.h
+ D arch/sparc/include/asm/switch_to_64.h
+ D arch/sparc/include/asm/tsunami.h
+ D arch/sparc/include/asm/turbosparc.h
+ D arch/sparc/include/asm/uaccess_32.h
+ D arch/sparc/include/asm/uaccess_64.h
+ D arch/sparc/include/asm/upa.h
+ D arch/sparc/include/asm/viking.h
+ D arch/sparc/include/asm/visasm.h
+ D arch/sparc/include/asm/xor_32.h
+ D arch/sparc/include/uapi/asm/swab.h
+ D arch/sparc/kernel/chmc.c
+ D arch/sparc/kernel/cpu.c
+ D arch/sparc/kernel/ftrace.c
+ D arch/sparc/kernel/iommu.c
+ D arch/sparc/kernel/irq_32.c
+ D arch/sparc/kernel/irq_64.c
+ D arch/sparc/kernel/kgdb_64.c
+ D arch/sparc/kernel/kprobes.c
+ D arch/sparc/kernel/kstack.h
+ D arch/sparc/kernel/leon_pmc.c
+ D arch/sparc/kernel/leon_smp.c
+ D arch/sparc/kernel/module.c
+ D arch/sparc/kernel/pci.c
+ M arch/sparc/kernel/pcic.c
+ D arch/sparc/kernel/pcr.c
+ D arch/sparc/kernel/process_32.c
+ D arch/sparc/kernel/process_64.c
+ D arch/sparc/kernel/prom_irqtrans.c
+ D arch/sparc/kernel/ptrace_64.c
+ D arch/sparc/kernel/setup_32.c
+ D arch/sparc/kernel/setup_64.c
+ D arch/sparc/kernel/signal32.c
+ D arch/sparc/kernel/smp_64.c
+ D arch/sparc/kernel/stacktrace.c
+ D arch/sparc/kernel/sun4d_smp.c
+ D arch/sparc/kernel/sun4m_irq.c
+ D arch/sparc/kernel/sun4m_smp.c
+ D arch/sparc/kernel/time_64.c
+ D arch/sparc/kernel/traps_32.c
+ D arch/sparc/kernel/traps_64.c
+ D arch/sparc/kernel/unaligned_32.c
+ D arch/sparc/kernel/unaligned_64.c
+ D arch/sparc/kernel/visemul.c
+ D arch/sparc/kernel/windows.c
+ M arch/sparc/lib/checksum_32.S
+ D arch/sparc/math-emu/sfp-util_32.h
+ D arch/sparc/math-emu/sfp-util_64.h
+ D arch/sparc/mm/fault_32.c
+ D arch/sparc/mm/fault_64.c
+ D arch/sparc/mm/init_64.c
+ D arch/sparc/mm/leon_mm.c
+ D arch/sparc/mm/srmmu.c
+ M arch/sparc/mm/ultra.S
+ D arch/tile/gxio/dma_queue.c
+ D arch/tile/include/asm/thread_info.h
+ D arch/tile/include/hv/netio_intf.h
+ D arch/tile/include/uapi/arch/sim.h
+ D arch/tile/kernel/vdso/vgettimeofday.c
+ D arch/tile/lib/memcpy_64.c
+ D arch/um/include/shared/user.h
+ D arch/unicore32/include/asm/barrier.h
+ D arch/unicore32/include/asm/checksum.h
+ D arch/unicore32/include/asm/cpu-single.h
+ D arch/unicore32/kernel/process.c
+ D arch/unicore32/kernel/setup.c
+ D arch/unicore32/mm/alignment.c
+ D arch/unicore32/mm/fault.c
+ D arch/x86/crypto/crc32c-intel_glue.c
+ D arch/x86/include/asm/apm.h
+ D arch/x86/include/asm/pvclock.h
+ D arch/x86/kernel/cpu/amd.c
+ D arch/x86/kernel/cpu/cyrix.c
+ D arch/x86/kernel/cpu/vmware.c
+ D arch/x86/kernel/fpu/bugs.c
+ D arch/x86/kernel/irq_32.c
+ D arch/x86/kernel/machine_kexec_32.c
+ D arch/x86/kernel/machine_kexec_64.c
+ D arch/x86/kernel/process_32.c
+ D arch/x86/kernel/reboot.c
+ D arch/x86/lib/memcpy_32.c
+ D arch/x86/lib/mmx_32.c
+ D arch/x86/lib/strstr_32.c
+ D arch/x86/lib/usercopy_32.c
+ D arch/x86/math-emu/fpu_entry.c
+ D arch/x86/mm/extable.c
+ D arch/x86/mm/init_32.c
+ D arch/x86/pci/pcbios.c
+ D arch/x86/platform/olpc/olpc-xo1-pm.c
+ D arch/x86/um/asm/checksum.h
+ D arch/x86/um/asm/checksum_32.h
+ D arch/x86/um/asm/processor.h
+ D arch/x86/um/asm/processor_32.h
+ D arch/x86/um/asm/processor_64.h
+ D arch/x86/um/bugs_32.c
+ D arch/x86/um/shared/sysdep/stub_32.h
+ D arch/x86/um/shared/sysdep/stub_64.h
+ D arch/xtensa/include/asm/atomic.h
+ D arch/xtensa/include/asm/barrier.h
+ D arch/xtensa/include/asm/bitops.h
+ D arch/xtensa/include/asm/checksum.h
+ D arch/xtensa/include/asm/cmpxchg.h
+ D arch/xtensa/include/asm/coprocessor.h
+ D arch/xtensa/include/asm/delay.h
+ D arch/xtensa/include/asm/ftrace.h
+ D arch/xtensa/include/asm/futex.h
+ D arch/xtensa/include/asm/mmu_context.h
+ D arch/xtensa/include/asm/pgtable.h
+ D arch/xtensa/include/asm/processor.h
+ D arch/xtensa/include/asm/spinlock.h
+ D arch/xtensa/include/asm/stacktrace.h
+ D arch/xtensa/include/asm/string.h
+ D arch/xtensa/include/asm/thread_info.h
+ D arch/xtensa/include/asm/tlbflush.h
+ D arch/xtensa/include/asm/traps.h
+ D arch/xtensa/include/asm/uaccess.h
+ D arch/xtensa/include/uapi/asm/swab.h
+ D arch/xtensa/kernel/irq.c
+ D arch/xtensa/kernel/platform.c
+ D arch/xtensa/kernel/setup.c
+ D arch/xtensa/kernel/smp.c
+ D arch/xtensa/kernel/traps.c
+ D arch/xtensa/platforms/iss/include/platform/simcall.h
+ D arch/xtensa/platforms/iss/setup.c
+ D arch/xtensa/platforms/xt2000/setup.c
+ D arch/xtensa/platforms/xtfpga/setup.c
+ M drivers/acpi/sleep.c
+ D drivers/ata/pata_ep93xx.c
+ M drivers/ata/sata_via.c
+ M drivers/block/paride/pf.c
+ D drivers/char/mwave/smapi.c
+ D drivers/clk/microchip/clk-core.c
+ D drivers/clk/pxa/clk-pxa3xx.c
+ D drivers/clocksource/asm9260_timer.c
+ D drivers/cpufreq/powernow-k7.c
+ D drivers/cpufreq/pxa3xx-cpufreq.c
+ D drivers/cpufreq/sa1110-cpufreq.c
+ D drivers/cpufreq/sparc-us2e-cpufreq.c
+ D drivers/cpufreq/sparc-us3-cpufreq.c
+ D drivers/cpufreq/speedstep-smi.c
+ D drivers/firmware/qcom_scm-32.c
+ D drivers/gpio/gpio-xtensa.c
+ D drivers/gpu/drm/gma500/mmu.c
+ M drivers/gpu/drm/nouveau/include/nvkm/subdev/clk.h
+ D drivers/gpu/drm/nouveau/nvkm/subdev/bios/init.c
+ D drivers/gpu/drm/nouveau/nvkm/subdev/pmu/fuc/macros.fuc
+ D drivers/hv/hv.c
+ D drivers/ide/cmd640.c
+ M drivers/infiniband/hw/qib/qib_file_ops.c
+ M drivers/input/mouse/lifebook.c
+ D drivers/input/mouse/vmmouse.c
+ M drivers/input/serio/i8042-x86ia64io.h
+ D drivers/iommu/msm_iommu.c
+ D drivers/isdn/i4l/isdn_audio.c
+ M drivers/macintosh/adb.c
+ D drivers/media/i2c/bt819.c
+ M drivers/media/pci/zoran/zr36016.c
+ M drivers/media/pci/zoran/zr36050.c
+ M drivers/media/pci/zoran/zr36060.c
+ D drivers/misc/echo/fir.h
+ D drivers/misc/vmw_balloon.c
+ M drivers/mmc/host/sdhci.c
+ D drivers/mtd/maps/nettel.c
+ D drivers/mtd/mtd_blkdevs.c
+ M drivers/net/ethernet/8390/pcnet_cs.c
+ D drivers/net/ethernet/amd/atarilance.c
+ M drivers/net/ethernet/amd/declance.c
+ D drivers/net/ethernet/apple/bmac.c
+ M drivers/net/ethernet/broadcom/bnx2x/bnx2x_link.c
+ D drivers/net/ethernet/i825xx/ether1.c
+ D drivers/net/ethernet/realtek/atp.h
+ D drivers/net/ethernet/sgi/ioc3-eth.c
+ M drivers/net/ethernet/sun/niu.h
+ D drivers/net/ethernet/sun/sunhme.c
+ D drivers/net/ethernet/xircom/xirc2ps_cs.c
+ M drivers/net/wireless/intel/iwlegacy/3945-mac.c
+ D drivers/parisc/power.c
+ D drivers/pci/hotplug/cpqphp_nvram.c
+ D drivers/pnp/pnpbios/bioscalls.c
+ D drivers/sbus/char/jsflash.c
+ D drivers/scsi/arm/arxescsi.c
+ D drivers/scsi/in2000.h
+ D drivers/scsi/mac_scsi.c
+ M drivers/scsi/pcmcia/Kconfig
+ M drivers/scsi/qlogicpti.c
+ D drivers/scsi/qlogicpti.h
+ D drivers/scsi/ultrastor.c
+ M drivers/staging/lustre/lustre/obdclass/genops.c
+ D drivers/staging/unisys/visorbus/iovmcall_gnuc.h
+ D drivers/tty/bfin_jtag_comm.c
+ D drivers/tty/hvc/hvc_bfin_jtag.c
+ D drivers/tty/serial/bfin_sport_uart.c
+ D drivers/usb/chipidea/ci.h
+ D drivers/usb/host/ehci.h
+ M drivers/usb/storage/unusual_devs.h
+ M drivers/video/fbdev/aty/radeon_pm.c
+ D drivers/video/fbdev/fsl-diu-fb.c
+ D drivers/video/fbdev/uvesafb.c
+ D drivers/video/fbdev/vesafb.c
+ M fs/isofs/inode.c
+ M fs/jffs2/dir.c
+ D fs/notify/inotify/inotify_user.c
+ D fs/xfs/libxfs/xfs_btree.h
+ M fs/xfs/libxfs/xfs_format.h
+ M fs/xfs/libxfs/xfs_inode_buf.c
+ M fs/xfs/libxfs/xfs_inode_buf.h
+ M fs/xfs/libxfs/xfs_log_format.h
+ M fs/xfs/xfs_bmap_util.c
+ M fs/xfs/xfs_inode.c
+ M fs/xfs/xfs_inode_item.c
+ M fs/xfs/xfs_log_recover.c
+ D include/linux/compiler-gcc.h
+ D include/linux/scx200_gpio.h
+ D include/soc/nps/common.h
+ M include/uapi/sound/asound.h
+ D lib/mpi/longlong.h
+ D lib/sha1.c
+ D lib/vsprintf.c
+ D net/ipv4/netfilter/nf_nat_snmp_basic.c
+ M net/ipv4/tcp_input.c
+ D scripts/checkpatch.pl
+ D scripts/genksyms/keywords.gperf
+ D scripts/genksyms/keywords.hash.c_shipped
+ D sound/core/seq/seq_queue.h
+ M sound/oss/uart6850.c
+ M sound/pci/ac97/ac97_patch.c
+ D tools/arch/alpha/include/asm/barrier.h
+ D tools/arch/powerpc/include/asm/barrier.h
+ D tools/arch/sh/include/asm/barrier.h
+ D tools/arch/sparc/include/asm/barrier_64.h
+ D tools/arch/xtensa/include/asm/barrier.h
+ D tools/include/linux/compiler.h
+ D tools/lguest/lguest.c
+ D tools/perf/arch/x86/util/header.c
+?? CREDITS.un
+?? Documentation/DocBook/kernel-hacking.tmpl.un
+?? Documentation/ManagementStyle.un
+?? Documentation/devices.txt.un
+?? Documentation/prctl/disable-tsc-ctxt-sw-stress-test.c.asm
+?? Documentation/prctl/disable-tsc-on-off-stress-test.c.asm
+?? Documentation/prctl/disable-tsc-test.c.asm
+?? Documentation/s390/Debugging390.txt.asm
+?? Documentation/scheduler/sched-arch.txt.asm
+?? Documentation/scsi/ChangeLog.1992-1997.asm
+?? Documentation/x86/exception-tables.txt.asm
+?? arch/alpha/boot/bootp.c.asm
+?? arch/alpha/boot/bootpz.c.asm
+?? arch/alpha/boot/main.c.asm
+?? arch/alpha/include/asm/atomic.h.asm
+?? arch/alpha/include/asm/barrier.h.asm
+?? arch/alpha/include/asm/bitops.h.asm
+?? arch/alpha/include/asm/bug.h.asm
+?? arch/alpha/include/asm/fpu.h.asm
+?? arch/alpha/include/asm/futex.h.asm
+?? arch/alpha/include/asm/local.h.asm
+?? arch/alpha/include/asm/mmu_context.h.asm
+?? arch/alpha/include/asm/pal.h.asm
+?? arch/alpha/include/asm/processor.h.asm
+?? arch/alpha/include/asm/rwsem.h.asm
+?? arch/alpha/include/asm/smp.h.asm
+?? arch/alpha/include/asm/special_insns.h.asm
+?? arch/alpha/include/asm/spinlock.h.asm
+?? arch/alpha/include/asm/thread_info.h.asm
+?? arch/alpha/include/asm/timex.h.asm
+?? arch/alpha/include/asm/uaccess.h.asm
+?? arch/alpha/include/asm/xchg.h.asm
+?? arch/alpha/include/uapi/asm/compiler.h.asm
+?? arch/alpha/kernel/core_cia.c.asm
+?? arch/alpha/kernel/core_marvel.c.asm
+?? arch/alpha/kernel/setup.c.asm
+?? arch/alpha/kernel/sys_jensen.c.asm
+?? arch/alpha/kernel/sys_sx164.c.asm
+?? arch/alpha/kernel/traps.c.asm
+?? arch/alpha/lib/csum_partial_copy.c.asm
+?? arch/alpha/lib/memcpy.c.asm
+?? arch/alpha/lib/stacktrace.c.asm
+?? arch/alpha/lib/udelay.c.asm
+?? arch/alpha/math-emu/sfp-util.h.asm
+?? arch/alpha/mm/init.c.asm
+?? arch/arc/include/asm/arcregs.h.asm
+?? arch/arc/include/asm/atomic.h.asm
+?? arch/arc/include/asm/bitops.h.asm
+?? arch/arc/include/asm/cache.h.asm
+?? arch/arc/include/asm/checksum.h.asm
+?? arch/arc/include/asm/cmpxchg.h.asm
+?? arch/arc/include/asm/delay.h.asm
+?? arch/arc/include/asm/futex.h.asm
+?? arch/arc/include/asm/io.h.asm
+?? arch/arc/include/asm/irqflags-arcv2.h.asm
+?? arch/arc/include/asm/irqflags-compact.h.asm
+?? arch/arc/include/asm/kgdb.h.asm
+?? arch/arc/include/asm/processor.h.asm
+?? arch/arc/include/asm/spinlock.h.asm
+?? arch/arc/include/asm/uaccess.h.asm
+?? arch/arc/include/uapi/asm/swab.h.asm
+?? arch/arc/kernel/ctx_sw.c.asm
+?? arch/arc/kernel/fpu.c.asm
+?? arch/arc/kernel/kprobes.c.asm
+?? arch/arc/kernel/process.c.asm
+?? arch/arc/kernel/reset.c.asm
+?? arch/arc/kernel/setup.c.asm
+?? arch/arc/kernel/smp.c.asm
+?? arch/arc/kernel/stacktrace.c.asm
+?? arch/arc/kernel/time.c.asm
+?? arch/arc/kernel/traps.c.asm
+?? arch/arc/kernel/unaligned.c.asm
+?? arch/arc/mm/tlb.c.asm
+?? arch/arc/plat-eznps/smp.c.asm
+?? arch/arm/boot/dts/am57xx-cl-som-am57x.dts.un
+?? arch/arm/boot/dts/am57xx-sbc-am57x.dts.un
+?? arch/arm/boot/dts/orion5x-kuroboxpro.dts.un
+?? arch/arm/boot/dts/orion5x-linkstation-lsgl.dts.un
+?? arch/arm/firmware/trusted_foundations.c.asm
+?? arch/arm/include/asm/atomic.h.asm
+?? arch/arm/include/asm/barrier.h.asm
+?? arch/arm/include/asm/bitrev.h.asm
+?? arch/arm/include/asm/checksum.h.asm
+?? arch/arm/include/asm/cmpxchg.h.asm
+?? arch/arm/include/asm/compiler.h.asm
+?? arch/arm/include/asm/div64.h.asm
+?? arch/arm/include/asm/edac.h.asm
+?? arch/arm/include/asm/futex.h.asm
+?? arch/arm/include/asm/irqflags.h.asm
+?? arch/arm/include/asm/kexec.h.asm
+?? arch/arm/include/asm/memory.h.asm
+?? arch/arm/include/asm/opcodes.h.asm
+?? arch/arm/include/asm/proc-fns.h.asm
+?? arch/arm/include/asm/processor.h.asm
+?? arch/arm/include/asm/spinlock.h.asm
+?? arch/arm/include/asm/swab.h.asm
+?? arch/arm/include/asm/tls.h.asm
+?? arch/arm/include/asm/uaccess.h.asm
+?? arch/arm/include/asm/unified.h.asm
+?? arch/arm/include/asm/xor.h.asm
+?? arch/arm/kernel/pj4-cp0.c.asm
+?? arch/arm/kernel/process.c.asm
+?? arch/arm/kernel/setup.c.asm
+?? arch/arm/kernel/smp.c.asm
+?? arch/arm/kernel/swp_emulate.c.asm
+?? arch/arm/kernel/xscale-cp0.c.asm
+?? arch/arm/kvm/arm.c.asm
+?? arch/arm/kvm/hyp/banked-sr.c.asm
+?? arch/arm/kvm/hyp/switch.c.asm
+?? arch/arm/mach-bcm/bcm_kona_smc.c.asm
+?? arch/arm/mach-imx/mm-imx3.c.asm
+?? arch/arm/mach-iop13xx/pci.c.asm
+?? arch/arm/mach-mv78xx0/common.c.asm
+?? arch/arm/mach-omap1/pm.c.asm
+?? arch/arm/mach-orion5x/board-rd88f5182.c.un
+?? arch/arm/mach-orion5x/kurobox_pro-setup.c.un
+?? arch/arm/mach-orion5x/rd88f5182-setup.c.un
+?? arch/arm/mach-prima2/hotplug.c.asm
+?? arch/arm/mach-pxa/irq.c.asm
+?? arch/arm/mach-pxa/mp900.c.asm
+?? arch/arm/mach-pxa/pxa3xx.c.asm
+?? arch/arm/mach-s3c24xx/include/mach/io.h.asm
+?? arch/arm/mach-ux500/hotplug.c.asm
+?? arch/arm/mm/alignment.c.asm
+?? arch/arm/mm/cache-feroceon-l2.c.asm
+?? arch/arm/mm/cache-tauros2.c.asm
+?? arch/arm/mm/cache-xsc3l2.c.asm
+?? arch/arm/mm/copypage-v6.c.asm
+?? arch/arm/nwfpe/softfloat-macros.asm
+?? arch/arm/nwfpe/softfloat-specialize.asm
+?? arch/arm/nwfpe/softfloat.c.asm
+?? arch/arm/plat-iop/pci.c.asm
+?? arch/arm/probes/decode.c.asm
+?? arch/arm/probes/kprobes/actions-arm.c.asm
+?? arch/arm/probes/kprobes/actions-common.c.asm
+?? arch/arm/probes/kprobes/actions-thumb.c.asm
+?? arch/arm/probes/kprobes/core.c.asm
+?? arch/arm/probes/kprobes/test-core.c.asm
+?? arch/arm/probes/kprobes/test-core.h.asm
+?? arch/arm64/crypto/aes-ce-cipher.c.asm
+?? arch/arm64/crypto/crc32-arm64.c.asm
+?? arch/arm64/include/asm/bitrev.h.asm
+?? arch/arm64/include/asm/compiler.h.asm
+?? arch/arm64/include/asm/lse.h.asm
+?? arch/arm64/kernel/armv8_deprecated.c.asm
+?? arch/avr32/include/asm/checksum.h.asm
+?? arch/avr32/mm/init.c.asm
+?? arch/blackfin/include/asm/barrier.h.asm
+?? arch/blackfin/include/asm/bfrom.h.asm
+?? arch/blackfin/include/asm/bitops.h.asm
+?? arch/blackfin/include/asm/blackfin.h.asm
+?? arch/blackfin/include/asm/checksum.h.asm
+?? arch/blackfin/include/asm/cmpxchg.h.asm
+?? arch/blackfin/include/asm/def_LPBlackfin.h.asm
+?? arch/blackfin/include/asm/delay.h.asm
+?? arch/blackfin/include/asm/ipipe.h.asm
+?? arch/blackfin/include/asm/irq.h.asm
+?? arch/blackfin/include/asm/processor.h.asm
+?? arch/blackfin/include/asm/thread_info.h.asm
+?? arch/blackfin/include/asm/timex.h.asm
+?? arch/blackfin/include/asm/uaccess.h.asm
+?? arch/blackfin/include/uapi/asm/swab.h.asm
+?? arch/blackfin/kernel/debug-mmrs.c.asm
+?? arch/blackfin/kernel/process.c.asm
+?? arch/blackfin/kernel/pseudodbg.c.asm
+?? arch/blackfin/mach-bf609/pm.c.asm
+?? arch/blackfin/mach-common/clocks-init.c.asm
+?? arch/blackfin/mach-common/pm.c.asm
+?? arch/cris/arch-v10/kernel/kgdb.c.asm
+?? arch/cris/arch-v10/lib/memset.c.asm
+?? arch/cris/arch-v10/lib/string.c.asm
+?? arch/cris/arch-v10/lib/usercopy.c.asm
+?? arch/cris/arch-v32/kernel/kgdb.c.asm
+?? arch/cris/arch-v32/kernel/process.c.asm
+?? arch/cris/arch-v32/kernel/traps.c.asm
+?? arch/cris/arch-v32/lib/memset.c.asm
+?? arch/cris/arch-v32/lib/string.c.asm
+?? arch/cris/arch-v32/lib/usercopy.c.asm
+?? arch/cris/boot/compressed/misc.c.asm
+?? arch/cris/include/arch-v10/arch/bitops.h.asm
+?? arch/cris/include/arch-v10/arch/bug.h.asm
+?? arch/cris/include/arch-v10/arch/checksum.h.asm
+?? arch/cris/include/arch-v10/arch/delay.h.asm
+?? arch/cris/include/arch-v10/arch/irq.h.asm
+?? arch/cris/include/arch-v10/arch/processor.h.asm
+?? arch/cris/include/arch-v10/arch/swab.h.asm
+?? arch/cris/include/arch-v10/arch/system.h.asm
+?? arch/cris/include/arch-v10/arch/thread_info.h.asm
+?? arch/cris/include/arch-v10/arch/uaccess.h.asm
+?? arch/cris/include/arch-v10/arch/unistd.h.asm
+?? arch/cris/include/arch-v32/arch/bitops.h.asm
+?? arch/cris/include/arch-v32/arch/bug.h.asm
+?? arch/cris/include/arch-v32/arch/checksum.h.asm
+?? arch/cris/include/arch-v32/arch/delay.h.asm
+?? arch/cris/include/arch-v32/arch/hwregs/supp_reg.h.asm
+?? arch/cris/include/arch-v32/arch/irq.h.asm
+?? arch/cris/include/arch-v32/arch/processor.h.asm
+?? arch/cris/include/arch-v32/arch/swab.h.asm
+?? arch/cris/include/arch-v32/arch/system.h.asm
+?? arch/cris/include/arch-v32/arch/thread_info.h.asm
+?? arch/cris/include/arch-v32/arch/uaccess.h.asm
+?? arch/cris/include/arch-v32/arch/unistd.h.asm
+?? arch/cris/include/asm/uaccess.h.asm
+?? arch/frv/include/asm/io.h.asm
+?? arch/h8300/include/asm/bitops.h.asm
+?? arch/h8300/include/asm/cmpxchg.h.asm
+?? arch/h8300/include/asm/io.h.asm
+?? arch/h8300/include/asm/irqflags.h.asm
+?? arch/h8300/include/asm/kgdb.h.asm
+?? arch/h8300/include/asm/switch_to.h.asm
+?? arch/h8300/include/asm/thread_info.h.asm
+?? arch/h8300/kernel/process.c.asm
+?? arch/h8300/kernel/ptrace_h.c.asm
+?? arch/h8300/kernel/sim-console.c.asm
+?? arch/h8300/lib/delay.c.asm
+?? arch/hexagon/include/asm/atomic.h.asm
+?? arch/hexagon/include/asm/bitops.h.asm
+?? arch/hexagon/include/asm/cmpxchg.h.asm
+?? arch/hexagon/include/asm/futex.h.asm
+?? arch/hexagon/include/asm/spinlock.h.asm
+?? arch/hexagon/kernel/smp.c.asm
+?? arch/hexagon/mm/cache.c.asm
+?? arch/ia64/include/asm/futex.h.asm
+?? arch/ia64/include/asm/spinlock.h.asm
+?? arch/m32r/include/asm/atomic.h.asm
+?? arch/m32r/include/asm/barrier.h.asm
+?? arch/m32r/include/asm/bitops.h.asm
+?? arch/m32r/include/asm/checksum.h.asm
+?? arch/m32r/include/asm/cmpxchg.h.asm
+?? arch/m32r/include/asm/local.h.asm
+?? arch/m32r/include/asm/spinlock.h.asm
+?? arch/m32r/include/asm/switch_to.h.asm
+?? arch/m32r/include/asm/thread_info.h.asm
+?? arch/m32r/include/asm/tlbflush.h.asm
+?? arch/m32r/include/asm/uaccess.h.asm
+?? arch/m32r/kernel/align.c.asm
+?? arch/m32r/kernel/ptrace.c.asm
+?? arch/m32r/kernel/smp.c.asm
+?? arch/m32r/kernel/sys_m32r.c.asm
+?? arch/m32r/lib/delay.c.asm
+?? arch/m32r/lib/usercopy.c.asm
+?? arch/m32r/mm/fault.c.asm
+?? arch/m32r/platforms/m32104ut/io.c.asm
+?? arch/m32r/platforms/m32700ut/io.c.asm
+?? arch/m32r/platforms/mappi/io.c.asm
+?? arch/m32r/platforms/mappi2/io.c.asm
+?? arch/m32r/platforms/mappi3/io.c.asm
+?? arch/m32r/platforms/oaks32r/io.c.asm
+?? arch/m32r/platforms/opsput/io.c.asm
+?? arch/m32r/platforms/usrv/io.c.asm
+?? arch/m68k/68000/m68VZ328.c.asm
+?? arch/m68k/coldfire/cache.c.asm
+?? arch/m68k/coldfire/pci.c.asm
+?? arch/m68k/include/asm/atarihw.h.asm
+?? arch/m68k/include/asm/atariints.h.asm
+?? arch/m68k/include/asm/atomic.h.asm
+?? arch/m68k/include/asm/bitops.h.asm
+?? arch/m68k/include/asm/bootstd.h.asm
+?? arch/m68k/include/asm/cacheflush_mm.h.asm
+?? arch/m68k/include/asm/cacheflush_no.h.asm
+?? arch/m68k/include/asm/checksum.h.asm
+?? arch/m68k/include/asm/cmpxchg.h.asm
+?? arch/m68k/include/asm/current.h.asm
+?? arch/m68k/include/asm/delay.h.asm
+?? arch/m68k/include/asm/linkage.h.asm
+?? arch/m68k/include/asm/mcfmmu.h.asm
+?? arch/m68k/include/asm/mmu_context.h.asm
+?? arch/m68k/include/asm/movs.h.asm
+?? arch/m68k/include/asm/page_mm.h.asm
+?? arch/m68k/include/asm/processor.h.asm
+?? arch/m68k/include/asm/raw_io.h.asm
+?? arch/m68k/include/asm/segment.h.asm
+?? arch/m68k/include/asm/switch_to.h.asm
+?? arch/m68k/include/asm/thread_info.h.asm
+?? arch/m68k/include/asm/tlbflush.h.asm
+?? arch/m68k/include/asm/uaccess_no.h.asm
+?? arch/m68k/include/uapi/asm/swab.h.asm
+?? arch/m68k/kernel/process.c.asm
+?? arch/m68k/kernel/signal.c.asm
+?? arch/m68k/kernel/sys_m68k.c.asm
+?? arch/m68k/kernel/traps.c.asm
+?? arch/m68k/kernel/vectors.c.asm
+?? arch/m68k/lib/checksum.c.asm
+?? arch/m68k/lib/muldi3.c.asm
+?? arch/m68k/mac/misc.c.asm
+?? arch/m68k/mm/hwtest.c.asm
+?? arch/m68k/mm/sun3kmap.c.asm
+?? arch/m68k/sun3/prom/console.c.asm
+?? arch/metag/include/asm/tbx.h.asm
+?? arch/metag/lib/usercopy.c.asm
+?? arch/microblaze/include/asm/checksum.h.asm
+?? arch/microblaze/include/asm/delay.h.asm
+?? arch/microblaze/include/asm/exceptions.h.asm
+?? arch/microblaze/include/asm/futex.h.asm
+?? arch/microblaze/include/asm/kgdb.h.asm
+?? arch/microblaze/include/asm/pgtable.h.asm
+?? arch/microblaze/include/asm/uaccess.h.asm
+?? arch/microblaze/kernel/cpu/cache.c.asm
+?? arch/microblaze/kernel/cpu/pvr.c.asm
+?? arch/microblaze/kernel/ftrace.c.asm
+?? arch/microblaze/kernel/kgdb.c.asm
+?? arch/microblaze/kernel/unwind.c.asm
+?? arch/microblaze/mm/init.c.asm
+?? arch/mips/alchemy/board-mtx1.c.asm
+?? arch/mips/alchemy/board-xxs1500.c.asm
+?? arch/mips/bcm47xx/setup.c.asm
+?? arch/mips/bcm63xx/setup.c.asm
+?? arch/mips/cavium-octeon/crypto/octeon-crypto.h.asm
+?? arch/mips/dec/kn01-berr.c.asm
+?? arch/mips/fw/sni/sniprom.c.asm
+?? arch/mips/include/asm/atomic.h.asm
+?? arch/mips/include/asm/barrier.h.asm
+?? arch/mips/include/asm/bitops.h.asm
+?? arch/mips/include/asm/bug.h.asm
+?? arch/mips/include/asm/checksum.h.asm
+?? arch/mips/include/asm/cmpxchg.h.asm
+?? arch/mips/include/asm/dec/prom.h.asm
+?? arch/mips/include/asm/div64.h.asm
+?? arch/mips/include/asm/edac.h.asm
+?? arch/mips/include/asm/futex.h.asm
+?? arch/mips/include/asm/hazards.h.asm
+?? arch/mips/include/asm/io.h.asm
+?? arch/mips/include/asm/irqflags.h.asm
+?? arch/mips/include/asm/jazz.h.asm
+?? arch/mips/include/asm/kvm_host.h.asm
+?? arch/mips/include/asm/kvm_para.h.asm
+?? arch/mips/include/asm/local.h.asm
+?? arch/mips/include/asm/mach-loongson64/loongson.h.asm
+?? arch/mips/include/asm/mach-pmcs-msp71xx/msp_regops.h.asm
+?? arch/mips/include/asm/mach-rc32434/rc32434.h.asm
+?? arch/mips/include/asm/mips-boards/sim.h.asm
+?? arch/mips/include/asm/mipsmtregs.h.asm
+?? arch/mips/include/asm/mipsprom.h.un
+?? arch/mips/include/asm/mipsregs.h.asm
+?? arch/mips/include/asm/msa.h.asm
+?? arch/mips/include/asm/netlogic/haldefs.h.asm
+?? arch/mips/include/asm/netlogic/mips-extns.h.asm
+?? arch/mips/include/asm/netlogic/xlr/fmn.h.asm
+?? arch/mips/include/asm/octeon/cvmx-spinlock.h.asm
+?? arch/mips/include/asm/paccess.h.asm
+?? arch/mips/include/asm/pgtable.h.asm
+?? arch/mips/include/asm/processor.h.asm
+?? arch/mips/include/asm/r4kcache.h.asm
+?? arch/mips/include/asm/sgiarcs.h.asm
+?? arch/mips/include/asm/sibyte/sb1250.h.asm
+?? arch/mips/include/asm/sim.h.asm
+?? arch/mips/include/asm/spinlock.h.asm
+?? arch/mips/include/asm/stacktrace.h.asm
+?? arch/mips/include/asm/string.h.asm
+?? arch/mips/include/asm/thread_info.h.asm
+?? arch/mips/include/asm/uaccess.h.asm
+?? arch/mips/include/uapi/asm/swab.h.asm
+?? arch/mips/jz4740/pm.c.asm
+?? arch/mips/jz4740/reset.c.asm
+?? arch/mips/kernel/csrc-r4k.c.asm
+?? arch/mips/kernel/genex.S.un
+?? arch/mips/kernel/idle.c.asm
+?? arch/mips/kernel/irq.c.asm
+?? arch/mips/kernel/kgdb.c.asm
+?? arch/mips/kernel/mips-mt.c.asm
+?? arch/mips/kernel/mips-r2-to-r6-emul.c.asm
+?? arch/mips/kernel/relocate.c.asm
+?? arch/mips/kernel/signal.c.asm
+?? arch/mips/kernel/signal_n32.c.asm
+?? arch/mips/kernel/signal_o32.c.asm
+?? arch/mips/kernel/smp-bmips.c.asm
+?? arch/mips/kernel/syscall.c.asm
+?? arch/mips/kernel/traps.c.asm
+?? arch/mips/kernel/unaligned.c.asm
+?? arch/mips/lantiq/clk.c.asm
+?? arch/mips/lib/delay.c.asm
+?? arch/mips/lib/mips-atomic.c.asm
+?? arch/mips/lib/r3k_dump_tlb.c.asm
+?? arch/mips/lib/uncached.c.asm
+?? arch/mips/loongson64/common/reset.c.asm
+?? arch/mips/loongson64/loongson-3/smp.c.asm
+?? arch/mips/mm/c-r4k.c.asm
+?? arch/mips/mm/c-tx39.c.asm
+?? arch/mips/mm/cerr-sb1.c.asm
+?? arch/mips/mm/sc-ip22.c.asm
+?? arch/mips/mm/sc-rm7k.c.asm
+?? arch/mips/mm/tlb-r3k.c.asm
+?? arch/mips/mm/tlb-r8k.c.asm
+?? arch/mips/pic32/common/reset.c.asm
+?? arch/mips/pmcs-msp71xx/msp_setup.c.asm
+?? arch/mips/pnx833x/common/reset.c.asm
+?? arch/mips/sgi-ip22/ip22-nvram.c.asm
+?? arch/mips/sibyte/common/sb_tbprof.c.asm
+?? arch/mips/vdso/gettimeofday.c.asm
+?? arch/mips/vdso/vdso.h.asm
+?? arch/mips/vr41xx/common/pmu.c.asm
+?? arch/mn10300/boot/Makefile.un
+?? arch/mn10300/boot/compressed/misc.c.un
+?? arch/mn10300/include/asm/dma.h.un
+?? arch/mn10300/include/asm/elf.h.un
+?? arch/mn10300/include/asm/hardirq.h.un
+?? arch/mn10300/include/asm/irq.h.un
+?? arch/mn10300/include/asm/processor.h.un
+?? arch/mn10300/include/asm/rtc.h.un
+?? arch/mn10300/include/asm/rwlock.h.un
+?? arch/mn10300/include/asm/signal.h.un
+?? arch/mn10300/include/asm/smp.h.un
+?? arch/mn10300/include/asm/string.h.un
+?? arch/mn10300/include/asm/types.h.un
+?? arch/mn10300/include/asm/ucontext.h.un
+?? arch/mn10300/include/asm/user.h.un
+?? arch/mn10300/include/uapi/asm/param.h.un
+?? arch/mn10300/include/uapi/asm/posix_types.h.un
+?? arch/mn10300/include/uapi/asm/signal.h.un
+?? arch/mn10300/include/uapi/asm/types.h.un
+?? arch/mn10300/kernel/entry.S.un
+?? arch/mn10300/kernel/mn10300_ksyms.c.un
+?? arch/mn10300/kernel/ptrace.c.un
+?? arch/mn10300/kernel/sigframe.h.un
+?? arch/mn10300/kernel/smp-low.S.un
+?? arch/mn10300/kernel/sys_mn10300.c.un
+?? arch/mn10300/kernel/traps.c.un
+?? arch/mn10300/lib/checksum.c.un
+?? arch/mn10300/lib/usercopy.c.un
+?? arch/mn10300/mm/extable.c.un
+?? arch/mn10300/mm/fault.c.un
+?? arch/mn10300/mm/init.c.un
+?? arch/mn10300/mm/misalignment.c.un
+?? arch/mn10300/mm/pgtable.c.un
+?? arch/mn10300/mm/tlb-mn10300.S.un
+?? arch/mn10300/proc-mn2ws0050/include/proc/cache.h.un
+?? arch/mn10300/proc-mn2ws0050/include/proc/clock.h.un
+?? arch/mn10300/proc-mn2ws0050/include/proc/irq.h.un
+?? arch/mn10300/proc-mn2ws0050/include/proc/smp-regs.h.un
+?? arch/mn10300/unit-asb2364/include/unit/clock.h.un
+?? arch/mn10300/unit-asb2364/include/unit/smsc911x.h.un
+?? arch/mn10300/unit-asb2364/smsc911x.c.un
+?? arch/nios2/include/asm/checksum.h.asm
+?? arch/nios2/include/asm/kgdb.h.asm
+?? arch/nios2/include/asm/switch_to.h.asm
+?? arch/nios2/include/asm/uaccess.h.asm
+?? arch/nios2/kernel/process.c.asm
+?? arch/nios2/kernel/setup.c.asm
+?? arch/nios2/lib/memset.c.asm
+?? arch/nios2/mm/cacheflush.c.asm
+?? arch/openrisc/include/asm/bitops/__ffs.h.asm
+?? arch/openrisc/include/asm/bitops/__fls.h.asm
+?? arch/openrisc/include/asm/bitops/ffs.h.asm
+?? arch/openrisc/include/asm/bitops/fls.h.asm
+?? arch/openrisc/include/asm/spr.h.asm
+?? arch/openrisc/include/asm/uaccess.h.asm
+?? arch/openrisc/kernel/process.c.asm
+?? arch/openrisc/kernel/traps.c.asm
+?? arch/openrisc/mm/fault.c.asm
+?? arch/parisc/include/asm/bitops.h.asm
+?? arch/parisc/include/asm/checksum.h.asm
+?? arch/parisc/include/asm/io.h.asm
+?? arch/parisc/include/asm/ldcw.h.asm
+?? arch/parisc/include/asm/prefetch.h.asm
+?? arch/parisc/include/asm/processor.h.asm
+?? arch/parisc/include/asm/special_insns.h.asm
+?? arch/parisc/include/asm/uaccess.h.asm
+?? arch/parisc/include/asm/unistd.h.asm
+?? arch/parisc/include/uapi/asm/swab.h.asm
+?? arch/parisc/kernel/unaligned.c.asm
+?? arch/parisc/kernel/unwind.c.asm
+?? arch/parisc/lib/checksum.c.asm
+?? arch/parisc/lib/memcpy.c.asm
+?? arch/powerpc/boot/io.h.asm
+?? arch/powerpc/include/asm/atomic.h.asm
+?? arch/powerpc/include/asm/barrier.h.asm
+?? arch/powerpc/include/asm/bitops.h.asm
+?? arch/powerpc/include/asm/book3s/32/pgtable.h.asm
+?? arch/powerpc/include/asm/book3s/64/hash.h.asm
+?? arch/powerpc/include/asm/bug.h.asm
+?? arch/powerpc/include/asm/cache.h.asm
+?? arch/powerpc/include/asm/checksum.h.asm
+?? arch/powerpc/include/asm/cmpxchg.h.asm
+?? arch/powerpc/include/asm/current.h.asm
+?? arch/powerpc/include/asm/dbell.h.asm
+?? arch/powerpc/include/asm/edac.h.asm
+?? arch/powerpc/include/asm/epapr_hcalls.h.asm
+?? arch/powerpc/include/asm/fsl_hcalls.h.asm
+?? arch/powerpc/include/asm/futex.h.asm
+?? arch/powerpc/include/asm/icswx.h.asm
+?? arch/powerpc/include/asm/io.h.asm
+?? arch/powerpc/include/asm/local.h.asm
+?? arch/powerpc/include/asm/mutex.h.asm
+?? arch/powerpc/include/asm/nohash/32/pgtable.h.asm
+?? arch/powerpc/include/asm/nohash/64/pgtable.h.asm
+?? arch/powerpc/include/asm/nohash/pgtable.h.asm
+?? arch/powerpc/include/asm/processor.h.asm
+?? arch/powerpc/include/asm/sfp-machine.h.asm
+?? arch/powerpc/include/asm/spinlock.h.asm
+?? arch/powerpc/include/asm/synch.h.asm
+?? arch/powerpc/include/asm/timex.h.asm
+?? arch/powerpc/include/asm/uaccess.h.asm
+?? arch/powerpc/kernel/btext.c.asm
+?? arch/powerpc/kernel/eeh_driver.c.un
+?? arch/powerpc/kernel/io.c.asm
+?? arch/powerpc/kernel/irq.c.asm
+?? arch/powerpc/kernel/prom_init.c.asm
+?? arch/powerpc/kvm/book3s_hv.c.asm
+?? arch/powerpc/kvm/book3s_hv_builtin.c.asm
+?? arch/powerpc/lib/sstep.c.asm
+?? arch/powerpc/mm/44x_mmu.c.asm
+?? arch/powerpc/mm/hash_native_64.c.asm
+?? arch/powerpc/mm/pgtable-hash64.c.asm
+?? arch/powerpc/platforms/amigaone/setup.c.asm
+?? arch/powerpc/platforms/embedded6xx/holly.c.asm
+?? arch/powerpc/platforms/powermac/bootx_init.c.asm
+?? arch/powerpc/sysdev/fsl_rio.c.asm
+?? arch/powerpc/sysdev/tsi108_pci.c.asm
+?? arch/score/include/asm/checksum.h.asm
+?? arch/score/include/asm/delay.h.asm
+?? arch/score/include/asm/thread_info.h.asm
+?? arch/score/include/asm/tlbflush.h.asm
+?? arch/score/include/asm/uaccess.h.asm
+?? arch/score/kernel/irq.c.asm
+?? arch/score/kernel/signal.c.asm
+?? arch/score/mm/cache.c.asm
+?? arch/sh/include/asm/atomic-grb.h.asm
+?? arch/sh/include/asm/atomic-llsc.h.asm
+?? arch/sh/include/asm/barrier.h.asm
+?? arch/sh/include/asm/bitops-cas.h.asm
+?? arch/sh/include/asm/bitops-grb.h.asm
+?? arch/sh/include/asm/bitops-llsc.h.asm
+?? arch/sh/include/asm/bitops-op32.h.asm
+?? arch/sh/include/asm/bitops.h.asm
+?? arch/sh/include/asm/bl_bit_32.h.asm
+?? arch/sh/include/asm/bl_bit_64.h.asm
+?? arch/sh/include/asm/bug.h.asm
+?? arch/sh/include/asm/cache_insns_32.h.asm
+?? arch/sh/include/asm/cache_insns_64.h.asm
+?? arch/sh/include/asm/checksum_32.h.asm
+?? arch/sh/include/asm/cmpxchg-cas.h.asm
+?? arch/sh/include/asm/cmpxchg-grb.h.asm
+?? arch/sh/include/asm/cmpxchg-llsc.h.asm
+?? arch/sh/include/asm/dwarf.h.asm
+?? arch/sh/include/asm/futex-cas.h.asm
+?? arch/sh/include/asm/futex-llsc.h.asm
+?? arch/sh/include/asm/kexec.h.asm
+?? arch/sh/include/asm/kgdb.h.asm
+?? arch/sh/include/asm/mmu_context_32.h.asm
+?? arch/sh/include/asm/mutex-llsc.h.asm
+?? arch/sh/include/asm/processor.h.asm
+?? arch/sh/include/asm/processor_32.h.asm
+?? arch/sh/include/asm/processor_64.h.asm
+?? arch/sh/include/asm/spinlock-cas.h.asm
+?? arch/sh/include/asm/spinlock-llsc.h.asm
+?? arch/sh/include/asm/string_32.h.asm
+?? arch/sh/include/asm/switch_to_32.h.asm
+?? arch/sh/include/asm/thread_info.h.asm
+?? arch/sh/include/asm/tlb_64.h.asm
+?? arch/sh/include/asm/traps_32.h.asm
+?? arch/sh/include/asm/traps_64.h.asm
+?? arch/sh/include/asm/uaccess_32.h.asm
+?? arch/sh/include/asm/unaligned-sh4a.h.asm
+?? arch/sh/include/asm/uncached.h.asm
+?? arch/sh/include/uapi/asm/swab.h.asm
+?? arch/sh/kernel/cpu/init.c.asm
+?? arch/sh/kernel/cpu/irq/intc-sh5.c.asm
+?? arch/sh/kernel/cpu/sh5/unwind.c.asm
+?? arch/sh/kernel/ftrace.c.asm
+?? arch/sh/kernel/io.c.asm
+?? arch/sh/kernel/irq.c.asm
+?? arch/sh/kernel/irq_32.c.asm
+?? arch/sh/kernel/irq_64.c.asm
+?? arch/sh/kernel/kgdb.c.asm
+?? arch/sh/kernel/sh_bios.c.asm
+?? arch/sh/lib/delay.c.asm
+?? arch/sh/lib/io.c.asm
+?? arch/sh/lib64/udelay.c.asm
+?? arch/sh/math-emu/sfp-util.h.asm
+?? arch/sh/mm/cache-sh5.c.asm
+?? arch/sparc/crypto/aes_glue.c.asm
+?? arch/sparc/crypto/camellia_glue.c.asm
+?? arch/sparc/crypto/crc32c_glue.c.asm
+?? arch/sparc/crypto/des_glue.c.asm
+?? arch/sparc/crypto/md5_glue.c.asm
+?? arch/sparc/crypto/sha1_glue.c.asm
+?? arch/sparc/crypto/sha256_glue.c.asm
+?? arch/sparc/crypto/sha512_glue.c.asm
+?? arch/sparc/include/asm/barrier_64.h.asm
+?? arch/sparc/include/asm/cacheflush.h.asm
+?? arch/sparc/include/asm/cacheflush_64.h.asm
+?? arch/sparc/include/asm/checksum_32.h.asm
+?? arch/sparc/include/asm/checksum_64.h.asm
+?? arch/sparc/include/asm/cmpxchg_64.h.asm
+?? arch/sparc/include/asm/delay_32.h.asm
+?? arch/sparc/include/asm/fpumacro.h.asm
+?? arch/sparc/include/asm/futex_64.h.asm
+?? arch/sparc/include/asm/io_64.h.asm
+?? arch/sparc/include/asm/irq_64.h.asm
+?? arch/sparc/include/asm/irqflags_64.h.asm
+?? arch/sparc/include/asm/kdebug_32.h.asm
+?? arch/sparc/include/asm/leon.h.asm
+?? arch/sparc/include/asm/mbus.h.asm
+?? arch/sparc/include/asm/mmu_context_64.h.asm
+?? arch/sparc/include/asm/msi.h.asm
+?? arch/sparc/include/asm/mxcc.h.asm
+?? arch/sparc/include/asm/obio.h.asm
+?? arch/sparc/include/asm/perf_event.h.asm
+?? arch/sparc/include/asm/pgtable_32.h.asm
+?? arch/sparc/include/asm/pgtable_64.h.asm
+?? arch/sparc/include/asm/pgtsrmmu.h.asm
+?? arch/sparc/include/asm/processor_32.h.asm
+?? arch/sparc/include/asm/processor_64.h.asm
+?? arch/sparc/include/asm/psr.h.asm
+?? arch/sparc/include/asm/ross.h.asm
+?? arch/sparc/include/asm/sbi.h.asm
+?? arch/sparc/include/asm/sfp-machine_32.h.asm
+?? arch/sparc/include/asm/spinlock_32.h.asm
+?? arch/sparc/include/asm/spinlock_64.h.asm
+?? arch/sparc/include/asm/spitfire.h.asm
+?? arch/sparc/include/asm/swift.h.asm
+?? arch/sparc/include/asm/switch_to_32.h.asm
+?? arch/sparc/include/asm/switch_to_64.h.asm
+?? arch/sparc/include/asm/tsunami.h.asm
+?? arch/sparc/include/asm/turbosparc.h.asm
+?? arch/sparc/include/asm/uaccess_32.h.asm
+?? arch/sparc/include/asm/uaccess_64.h.asm
+?? arch/sparc/include/asm/upa.h.asm
+?? arch/sparc/include/asm/viking.h.asm
+?? arch/sparc/include/asm/visasm.h.asm
+?? arch/sparc/include/asm/xor_32.h.asm
+?? arch/sparc/include/uapi/asm/swab.h.asm
+?? arch/sparc/kernel/chmc.c.asm
+?? arch/sparc/kernel/cpu.c.asm
+?? arch/sparc/kernel/cpu.c.un
+?? arch/sparc/kernel/ftrace.c.asm
+?? arch/sparc/kernel/iommu.c.asm
+?? arch/sparc/kernel/irq_32.c.asm
+?? arch/sparc/kernel/irq_64.c.asm
+?? arch/sparc/kernel/kgdb_64.c.asm
+?? arch/sparc/kernel/kprobes.c.asm
+?? arch/sparc/kernel/kstack.h.asm
+?? arch/sparc/kernel/leon_pmc.c.asm
+?? arch/sparc/kernel/leon_smp.c.asm
+?? arch/sparc/kernel/module.c.asm
+?? arch/sparc/kernel/pci.c.asm
+?? arch/sparc/kernel/pcic.c.un
+?? arch/sparc/kernel/pcr.c.asm
+?? arch/sparc/kernel/process_32.c.asm
+?? arch/sparc/kernel/process_64.c.asm
+?? arch/sparc/kernel/prom_irqtrans.c.asm
+?? arch/sparc/kernel/ptrace_64.c.asm
+?? arch/sparc/kernel/setup_32.c.asm
+?? arch/sparc/kernel/setup_64.c.asm
+?? arch/sparc/kernel/signal32.c.asm
+?? arch/sparc/kernel/smp_64.c.asm
+?? arch/sparc/kernel/stacktrace.c.asm
+?? arch/sparc/kernel/sun4d_smp.c.asm
+?? arch/sparc/kernel/sun4m_irq.c.asm
+?? arch/sparc/kernel/sun4m_smp.c.asm
+?? arch/sparc/kernel/time_64.c.asm
+?? arch/sparc/kernel/traps_32.c.asm
+?? arch/sparc/kernel/traps_64.c.asm
+?? arch/sparc/kernel/unaligned_32.c.asm
+?? arch/sparc/kernel/unaligned_64.c.asm
+?? arch/sparc/kernel/visemul.c.asm
+?? arch/sparc/kernel/windows.c.asm
+?? arch/sparc/lib/checksum_32.S.un
+?? arch/sparc/math-emu/sfp-util_32.h.asm
+?? arch/sparc/math-emu/sfp-util_64.h.asm
+?? arch/sparc/mm/fault_32.c.asm
+?? arch/sparc/mm/fault_64.c.asm
+?? arch/sparc/mm/init_64.c.asm
+?? arch/sparc/mm/leon_mm.c.asm
+?? arch/sparc/mm/srmmu.c.asm
+?? arch/sparc/mm/srmmu.c.un
+?? arch/sparc/mm/ultra.S.un
+?? arch/tile/gxio/dma_queue.c.asm
+?? arch/tile/include/asm/thread_info.h.asm
+?? arch/tile/include/hv/netio_intf.h.asm
+?? arch/tile/include/uapi/arch/sim.h.asm
+?? arch/tile/kernel/vdso/vgettimeofday.c.asm
+?? arch/tile/lib/memcpy_64.c.asm
+?? arch/um/include/shared/user.h.asm
+?? arch/unicore32/include/asm/barrier.h.asm
+?? arch/unicore32/include/asm/checksum.h.asm
+?? arch/unicore32/include/asm/cpu-single.h.asm
+?? arch/unicore32/kernel/process.c.asm
+?? arch/unicore32/kernel/setup.c.asm
+?? arch/unicore32/mm/alignment.c.asm
+?? arch/unicore32/mm/fault.c.asm
+?? arch/x86/crypto/crc32c-intel_glue.c.asm
+?? arch/x86/include/asm/apm.h.asm
+?? arch/x86/include/asm/pvclock.h.asm
+?? arch/x86/kernel/cpu/amd.c.asm
+?? arch/x86/kernel/cpu/cyrix.c.asm
+?? arch/x86/kernel/cpu/vmware.c.asm
+?? arch/x86/kernel/fpu/bugs.c.asm
+?? arch/x86/kernel/irq_32.c.asm
+?? arch/x86/kernel/machine_kexec_32.c.asm
+?? arch/x86/kernel/machine_kexec_64.c.asm
+?? arch/x86/kernel/process_32.c.asm
+?? arch/x86/kernel/reboot.c.asm
+?? arch/x86/lib/memcpy_32.c.asm
+?? arch/x86/lib/mmx_32.c.asm
+?? arch/x86/lib/strstr_32.c.asm
+?? arch/x86/lib/usercopy_32.c.asm
+?? arch/x86/math-emu/fpu_entry.c.asm
+?? arch/x86/mm/extable.c.asm
+?? arch/x86/mm/init_32.c.asm
+?? arch/x86/pci/pcbios.c.asm
+?? arch/x86/platform/olpc/olpc-xo1-pm.c.asm
+?? arch/x86/um/asm/checksum.h.asm
+?? arch/x86/um/asm/checksum_32.h.asm
+?? arch/x86/um/asm/processor.h.asm
+?? arch/x86/um/asm/processor_32.h.asm
+?? arch/x86/um/asm/processor_64.h.asm
+?? arch/x86/um/bugs_32.c.asm
+?? arch/x86/um/shared/sysdep/stub_32.h.asm
+?? arch/x86/um/shared/sysdep/stub_64.h.asm
+?? arch/xtensa/include/asm/atomic.h.asm
+?? arch/xtensa/include/asm/barrier.h.asm
+?? arch/xtensa/include/asm/bitops.h.asm
+?? arch/xtensa/include/asm/checksum.h.asm
+?? arch/xtensa/include/asm/cmpxchg.h.asm
+?? arch/xtensa/include/asm/coprocessor.h.asm
+?? arch/xtensa/include/asm/delay.h.asm
+?? arch/xtensa/include/asm/ftrace.h.asm
+?? arch/xtensa/include/asm/futex.h.asm
+?? arch/xtensa/include/asm/mmu_context.h.asm
+?? arch/xtensa/include/asm/pgtable.h.asm
+?? arch/xtensa/include/asm/processor.h.asm
+?? arch/xtensa/include/asm/spinlock.h.asm
+?? arch/xtensa/include/asm/stacktrace.h.asm
+?? arch/xtensa/include/asm/string.h.asm
+?? arch/xtensa/include/asm/thread_info.h.asm
+?? arch/xtensa/include/asm/tlbflush.h.asm
+?? arch/xtensa/include/asm/traps.h.asm
+?? arch/xtensa/include/asm/uaccess.h.asm
+?? arch/xtensa/include/uapi/asm/swab.h.asm
+?? arch/xtensa/kernel/irq.c.asm
+?? arch/xtensa/kernel/platform.c.asm
+?? arch/xtensa/kernel/setup.c.asm
+?? arch/xtensa/kernel/smp.c.asm
+?? arch/xtensa/kernel/traps.c.asm
+?? arch/xtensa/platforms/iss/include/platform/simcall.h.asm
+?? arch/xtensa/platforms/iss/setup.c.asm
+?? arch/xtensa/platforms/xt2000/setup.c.asm
+?? arch/xtensa/platforms/xtfpga/setup.c.asm
+?? drivers/acpi/sleep.c.un
+?? drivers/ata/pata_ep93xx.c.asm
+?? drivers/ata/sata_via.c.un
+?? drivers/block/paride/pf.c.un
+?? drivers/char/mwave/smapi.c.asm
+?? drivers/clk/microchip/clk-core.c.asm
+?? drivers/clk/pxa/clk-pxa3xx.c.asm
+?? drivers/clocksource/asm9260_timer.c.asm
+?? drivers/cpufreq/pxa3xx-cpufreq.c.asm
+?? drivers/cpufreq/sa1110-cpufreq.c.asm
+?? drivers/cpufreq/sparc-us2e-cpufreq.c.asm
+?? drivers/cpufreq/sparc-us3-cpufreq.c.asm
+?? drivers/cpufreq/speedstep-smi.c.asm
+?? drivers/firmware/qcom_scm-32.c.asm
+?? drivers/gpio/gpio-xtensa.c.asm
+?? drivers/gpu/drm/gma500/mmu.c.asm
+?? drivers/gpu/drm/nouveau/include/nvkm/subdev/clk.h.un
+?? drivers/hv/hv.c.asm
+?? drivers/infiniband/hw/qib/qib_file_ops.c.un
+?? drivers/input/mouse/lifebook.c.un
+?? drivers/input/mouse/vmmouse.c.asm
+?? drivers/input/serio/i8042-x86ia64io.h.un
+?? drivers/iommu/msm_iommu.c.asm
+?? drivers/isdn/i4l/isdn_audio.c.asm
+?? drivers/macintosh/adb.c.un
+?? drivers/media/pci/zoran/zr36016.c.un
+?? drivers/media/pci/zoran/zr36050.c.un
+?? drivers/media/pci/zoran/zr36060.c.un
+?? drivers/misc/echo/fir.h.asm
+?? drivers/misc/vmw_balloon.c.asm
+?? drivers/mmc/host/sdhci.c.un
+?? drivers/mtd/maps/nettel.c.asm
+?? drivers/net/ethernet/8390/pcnet_cs.c.un
+?? drivers/net/ethernet/amd/atarilance.c.asm
+?? drivers/net/ethernet/amd/declance.c.un
+?? drivers/net/ethernet/apple/bmac.c.asm
+?? drivers/net/ethernet/broadcom/bnx2x/bnx2x_link.c.un
+?? drivers/net/ethernet/i825xx/ether1.c.asm
+?? drivers/net/ethernet/realtek/atp.h.asm
+?? drivers/net/ethernet/sgi/ioc3-eth.c.asm
+?? drivers/net/ethernet/sun/niu.h.un
+?? drivers/net/ethernet/xircom/xirc2ps_cs.c.asm
+?? drivers/net/wireless/intel/iwlegacy/3945-mac.c.un
+?? drivers/parisc/power.c.asm
+?? drivers/pci/hotplug/cpqphp_nvram.c.asm
+?? drivers/pnp/pnpbios/bioscalls.c.asm
+?? drivers/sbus/char/jsflash.c.asm
+?? drivers/scsi/arm/arxescsi.c.asm
+?? drivers/scsi/in2000.h.asm
+?? drivers/scsi/mac_scsi.c.asm
+?? drivers/scsi/pcmcia/Kconfig.un
+?? drivers/scsi/qlogicpti.c.un
+?? drivers/scsi/ultrastor.c.asm
+?? drivers/staging/lustre/lustre/obdclass/genops.c.un
+?? drivers/staging/unisys/visorbus/iovmcall_gnuc.h.asm
+?? drivers/tty/bfin_jtag_comm.c.asm
+?? drivers/tty/hvc/hvc_bfin_jtag.c.asm
+?? drivers/tty/serial/bfin_sport_uart.c.asm
+?? drivers/usb/chipidea/ci.h.asm
+?? drivers/usb/host/ehci.h.asm
+?? drivers/usb/storage/unusual_devs.h.un
+?? drivers/video/fbdev/aty/radeon_pm.c.un
+?? drivers/video/fbdev/fsl-diu-fb.c.asm
+?? drivers/video/fbdev/uvesafb.c.asm
+?? drivers/video/fbdev/vesafb.c.asm
+?? fs/isofs/inode.c.un
+?? fs/jffs2/dir.c.un
+?? fs/xfs/libxfs/xfs_format.h.un
+?? fs/xfs/libxfs/xfs_inode_buf.c.un
+?? fs/xfs/libxfs/xfs_inode_buf.h.un
+?? fs/xfs/libxfs/xfs_log_format.h.un
+?? fs/xfs/xfs_bmap_util.c.un
+?? fs/xfs/xfs_inode.c.un
+?? fs/xfs/xfs_inode_item.c.un
+?? fs/xfs/xfs_log_recover.c.un
+?? include/linux/compiler-gcc.h.asm
+?? include/linux/scx200_gpio.h.asm
+?? include/soc/nps/common.h.asm
+?? include/uapi/sound/asound.h.un
+?? lib/mpi/longlong.h.asm
+?? lib/sha1.c.asm
+?? net/ipv4/tcp_input.c.un
+?? scripts/checkpatch.pl.asm
+?? scripts/genksyms/keywords.gperf.asm
+?? scripts/genksyms/keywords.hash.c_shipped.asm
+?? sound/core/seq/seq_queue.h.asm
+?? sound/oss/uart6850.c.un
+?? sound/pci/ac97/ac97_patch.c.un
+?? tools/arch/alpha/include/asm/barrier.h.asm
+?? tools/arch/powerpc/include/asm/barrier.h.asm
+?? tools/arch/sh/include/asm/barrier.h.asm
+?? tools/arch/sparc/include/asm/barrier_64.h.asm
+?? tools/arch/xtensa/include/asm/barrier.h.asm
+?? tools/include/linux/compiler.h.asm
+?? tools/lguest/lguest.c.asm
+?? tools/perf/arch/x86/util/header.c.asm
