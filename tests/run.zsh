@@ -59,8 +59,6 @@ function test_status() {
   local grep_prompt_time=$(test_function 'git_prompt_status_grep')
   local grep_prompt_data=$(cat $TEMPFILE)
 
-  
-
   local measure=$(compare_test_times $grep_prompt_time $hash_prompt_time)
   if [ "$hash_prompt_data" = "$grep_prompt_data" ]; then
     printf "test passed: %-60s%s\n" $test_file $measure
