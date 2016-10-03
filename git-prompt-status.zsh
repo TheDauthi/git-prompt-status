@@ -11,10 +11,8 @@ function git_prompt_status() {
 
   # If the tracking line exists, grab it.
   if [[ $status_lines[1] =~ "^## [^ ]+ \[(.*)\]" ]]; then
-    # If there are multiple, split them on the comma
     local branch_statuses=("${(@s/,/)match}")
     for branch_status in ${branch_statuses}; do
-      # There are a few other states that we're not looking for...
       [[ $branch_status =~ "(behind|diverged|ahead)" ]] || continue
       prefix_lookup[$match[1]]=0
     done
