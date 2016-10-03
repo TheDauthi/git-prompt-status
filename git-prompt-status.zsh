@@ -3,8 +3,7 @@ function git_prompt_status() {
   local -A prefix_lookup
 
   status_text=$(command git status --porcelain -b 2> /dev/null)
-  # 128 - this directory is not a repo, or git crashed in the crash handler
-  # There is no data to be read
+
   [[ -z $status_text && $? -eq 128 ]] && return
 
   status_lines=("${(@f)${status_text}}");
