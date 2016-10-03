@@ -1,29 +1,23 @@
 function git_prompt_status() {
   local status_text status_lines tracking_line status_prompt
+  local -A prefix_lookup
 
   status_text=$(command git status --porcelain -b 2> /dev/null)
+  # 128 - this directory is not a repo, or git crashed in the crash handler
+  # There is no data to be read
+  [[ -z $status_text && $? -eq 128 ]] && return
 
   status_lines=("${(@f)${status_text}}");
 
-  local -A prefix_lookup
-
-  # "^## [^ ]+ \[(((behind|diverged|ahead) [[:digit:]]+[, ]*)+)\]"
-  # does this more easily, but this is easier to read
-
   # If the tracking line exists, grab it.
-  if [[ $status_lines[1] =~ "^## [^ ]+ \[.*\]" ]]; then
-    tracking_line=$status_lines[1]
-    # Pull out the branch statuses
-    if [[ $tracking_line =~ ".*\[(.*)\].*" ]]; then
-      # If there are multiple, split them on the comma
-      local branch_statuses=("${(@s/,/)match}")
-      for branch_status in ${branch_statuses}; do
-        # There are a few other states that we're not looking for...
-        if [[ $branch_status =~ "(behind|diverged|ahead)" ]]; then
-          prefix_lookup[$match[1]]=0
-        fi
-      done
-    fi
+  if [[ $status_lines[1] =~ "^## [^ ]+ \[(.*)\]" ]]; then
+    # If there are multiple, split them on the comma
+    local branch_statuses=("${(@s/,/)match}")
+    for branch_status in ${branch_statuses}; do
+      # There are a few other states that we're not looking for...
+      [[ $branch_status =~ "(behind|diverged|ahead)" ]] || continue
+      prefix_lookup[$match[1]]=0
+    done
     shift status_lines
   fi
 
@@ -39,13 +33,13 @@ function git_prompt_status() {
     status_prompt="$ZSH_THEME_GIT_PROMPT_UNTRACKED$status_prompt"
   fi
 
-  if _match_status_prefix 'A  '; then 
+  if _match_status_prefix 'A  '; then
     status_prompt="$ZSH_THEME_GIT_PROMPT_ADDED$status_prompt"
   elif _match_status_prefix 'M  '; then
     status_prompt="$ZSH_THEME_GIT_PROMPT_ADDED$status_prompt"
   fi
 
-  if _match_status_prefix ' M '; then 
+  if _match_status_prefix ' M '; then
     status_prompt="$ZSH_THEME_GIT_PROMPT_MODIFIED$status_prompt"
   elif _match_status_prefix 'AM '; then
     status_prompt="$ZSH_THEME_GIT_PROMPT_MODIFIED$status_prompt"
@@ -53,10 +47,10 @@ function git_prompt_status() {
     status_prompt="$ZSH_THEME_GIT_PROMPT_MODIFIED$status_prompt"
   fi
 
-  if _match_status_prefix 'R  '; then 
+  if _match_status_prefix 'R  '; then
     status_prompt="$ZSH_THEME_GIT_PROMPT_RENAMED$status_prompt"
   fi
-  if _match_status_prefix ' D '; then 
+  if _match_status_prefix ' D '; then
     status_prompt="$ZSH_THEME_GIT_PROMPT_DELETED$status_prompt"
   elif _match_status_prefix 'D  '; then
     status_prompt="$ZSH_THEME_GIT_PROMPT_DELETED$status_prompt"
