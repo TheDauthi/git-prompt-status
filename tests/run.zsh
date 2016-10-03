@@ -2,7 +2,7 @@
 # Test stub for git-status
 source ./helpers.zsh
 
-current_path="$HOME/.oh-my-zsh/lib/git.zsh"
+current_path="$ZSH/lib/git.zsh"
 updated_path="$(readlink -f ../git-prompt-status.zsh)"
 test_function="git_prompt_status"
 
@@ -27,13 +27,13 @@ function initialize_tests() {
 
 ################# WARNING #################
 # This function has a side effect
-# It empties $TEMPFILE and refills it with 
+# It empties $TEMPFILE and refills it with
 # the function output.
 ###########################################
 
 function test_status() {
   local test_file=$1
-  
+
   # We pass this to our git stub so it knows what fake fixture to use
   export ZSH_FIXTURE_FILENAME=$test_file
 
