@@ -11,9 +11,9 @@ local ZSH_THEME_GIT_PROMPT_AHEAD='>'
 local ZSH_THEME_GIT_PROMPT_BEHIND='<'
 local ZSH_THEME_GIT_PROMPT_DIVERGED='V'
 
-export ZSH_FIXTURE_FILENAME="fixtures/behind-rubocop.test"
+export ZSH_FIXTURE_FILENAME="fixtures/ahead-behind-with-data.test"
 
 _load_external_function '../git-prompt-status.zsh' 'git_prompt_status' 'show_prompt_status'
 _add_shim 'git'
 
-show_prompt_status 
+show_prompt_status
