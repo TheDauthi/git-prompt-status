@@ -1,13 +1,20 @@
 #!/bin/zsh
-# Tests generated with 
+# Tests generated with
 # find -maxdepth 1 -type d -print0 |xargs --null -i zsh -c " cd {}; git status --porcelain -b > /home/billyconn/Projects/zsh-git-cmd/tests/fixtures/{}.test"
 
 autoload -U colors; colors
 emulate -L zsh
 
+function _iterate_hash() {
+  table=$1
+  for k in "${(@k)table}"; do
+    echo "$k -> $table[$k]"
+  done
+}
+
 #### BOILERPLATE ####
 function _copy_function() {
-  test -n "$(declare -f $1)" || return 
+  test -n "$(declare -f $1)" || return
   eval "${_/$1/$2}"
   return 0
 }
@@ -74,9 +81,8 @@ function compare_test_times() {
   local new_time=$2
 
   local measure percent timing
-  
+
   timing=$(printf 'new: %s, old: %s' $new_time $old_time)
-  echo $old_time
 
   if (( new_time == old_time )); then
     measure=$(printf 'unchanged, %s' $timing)
