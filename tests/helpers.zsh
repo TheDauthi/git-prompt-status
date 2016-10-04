@@ -5,10 +5,13 @@
 autoload -U colors; colors
 emulate -L zsh
 
+# _iterate_hash 'statuses_seen' 'printf "%s -> %s\n"'
 function _iterate_hash() {
-  local hashname='statuses_seen'
-  for k in "${(@k)${(P)hashname}}"; do
-    echo "$k -> ${(P)hashname}[$k]"
+  local hashname=$1
+  local method=$2
+  for k in "${(@kP)hashname}"; do
+    v="${${(@P)hashname}[$k]}"
+    eval "$method $k $v"
   done
 }
 
