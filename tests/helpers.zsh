@@ -6,9 +6,9 @@ autoload -U colors; colors
 emulate -L zsh
 
 function _iterate_hash() {
-  table=$1
-  for k in "${(@k)table}"; do
-    echo "$k -> $table[$k]"
+  local hashname='statuses_seen'
+  for k in "${(@k)${(P)hashname}}"; do
+    echo "$k -> ${(P)hashname}[$k]"
   done
 }
 
