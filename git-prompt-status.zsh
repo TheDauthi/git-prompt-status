@@ -69,8 +69,8 @@ function git_prompt_status() {
 
   # This not only gives us a status lookup, but the count of each type
   for status_line in ${status_lines}; do
-    local line_prefix=${status_line[1, 3]}
-    local status_constant=${(v)prefix_constant_map[$line_prefix]}
+    local status_prefix=${status_line[1, 3]}
+    local status_constant=${(v)prefix_constant_map[$status_prefix]}
 
     if [[ -z $status_constant ]]; then
       continue
