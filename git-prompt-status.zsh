@@ -1,5 +1,5 @@
 function git_prompt_status() {
-  local status_text status_lines tracking_line status_prompt
+  local status_prompt=""
 
   # A lookup table of each git status encountered
   local -A statuses_seen
@@ -41,7 +41,7 @@ function git_prompt_status() {
   local status_constants=(UNTRACKED ADDED MODIFIED RENAMED DELETED STASHED
                           UNMERGED AHEAD BEHIND DIVERGED)
 
-  status_text=$(command git status --porcelain -b 2> /dev/null)
+  local status_text=$(command git status --porcelain -b 2> /dev/null)
 
   # Don't continue on a catastrophic failure
   if [[ $? -eq 128 ]]; then
@@ -52,7 +52,7 @@ function git_prompt_status() {
     statuses_seen['STASHED']=1
   fi
 
-  status_lines=("${(@f)${status_text}}");
+  local status_lines=("${(@f)${status_text}}");
 
   # If the tracking line exists, get and parse it
   if [[ $status_lines[1] =~ "^## [^ ]+ \[(.*)\]" ]]; then
