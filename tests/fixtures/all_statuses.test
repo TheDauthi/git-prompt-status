@@ -1,0 +1,13 @@
+## rewards-rubocop...origin/rewards-rubocop [ahead 11, behind 74]
+ M Documentation/DocBook/kernel-hacking.tmpl
+ D Documentation/DocBook/kernel-locking.tmpl
+?? CREDITS.un
+A  Added.txt
+M  AlsoAdded.txt
+ M Modified.ps
+AM AlsoModified.pl
+ T Modified.php
+R  I_renamed_this_file.php
+ D DELETEME
+D  NO_READ
+UU UGH
