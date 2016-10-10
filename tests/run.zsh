@@ -3,7 +3,7 @@
 source ./helpers.zsh
 
 current_path="$ZSH/lib/git.zsh"
-updated_path="$(readlink -f ../git-prompt-status.zsh)"
+updated_path="$(abspath ../git-prompt-status.zsh)"
 test_function="git_prompt_status"
 
 # I can't use command substitution for once.

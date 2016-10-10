@@ -38,7 +38,7 @@ function _load_external_function() {
 # This functionality is a stub for later changes
 function _add_shim() {
   local shim=$1
-  local absolute_shim=$(readlink -f $shim)
+  local absolute_shim=$(abspath $shim)
   local absolute_path=$(dirname $absolute_shim)
   PATH="$absolute_path:$PATH"
 }
@@ -102,4 +102,27 @@ function compare_test_times() {
     fi
   fi
   echo $measure
+}
+
+# BSD replacement for readlink -f
+function abspath()
+{
+  local target=$1
+  cd $(dirname "$target")
+  target=$(basename "$target")
+
+  # Iterate down a (possible) chain of symlinks
+  while [ -L "$target" ]
+  do
+      target=$(readlink "$target")
+      cd $(dirname "$target")
+      target=$(basename "$target")
+  done
+
+  # Compute the canonicalized name by finding the physical path 
+  # for the directory we're in and appending the target file.
+  local parent_dir=`pwd -P`
+  local absolute_path="$parent_dir/$target"
+
+  echo $absolute_path
 }
